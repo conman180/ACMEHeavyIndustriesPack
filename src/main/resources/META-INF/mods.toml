@@ -11,25 +11,29 @@ license="All rights reserved"
 
 [[mods]] 
 # The ID of your pack.
-modId="mtsofficialpack"
+modIds="acmeheavyindustries"
 # Version number.  Can be whatever format you'd like.
-version="V24"
+version="V1.1"
  # Display name for the pack in the in-game mods list.
-displayName="Immersive Vehicles (MTS/IV) - Official Content Pack"
+displayName="ACME Heavy Industries Pack for Immersive Vehicles"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
 displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
 # Pack logo.
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
 description='''
-A small selection of content made by the core Immersive Vehicles (MTS) team.  This pack aims to show a little of all the things the mod can do, but not focus in any one area too heavily.  A good all-around starter pack.
-
-Credits go to Don Bruce, Limit, Wolfvanox, Cactus, Fsendventd, and last, but certianly not least, Mr Mulle.
+A companion to the official pack; this centers mainly around military aviation from all eras however is not limited solely to it.
 '''
 
-[[dependencies.mtsofficialpack]]
+[[dependencies.acmeheavyindustries]]
     modId="mts"
     mandatory=true
     versionRange="[22.6.0,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.acmeheavyindustries]]
+    modId="mtsofficialpack"
+    mandatory=true
+    versionRange="[V24)"
     ordering="NONE"
     side="BOTH"

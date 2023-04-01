@@ -1,9 +1,0 @@
-{
-    "general": {
-        "name" : "MTS (AKA Free Product Placement)",
-        "type" : "sign",
-        "modelName" : "sign",
-        "materials" : ["oredict:ingotIron:1"]
-	   	
-	}
-}

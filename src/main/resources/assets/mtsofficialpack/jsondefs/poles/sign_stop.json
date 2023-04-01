@@ -1,8 +1,0 @@
-{
-    "general": {
-        "name" : "Stop",
-        "type" : "sign",
-        "modelName" : "sign",
-        "materials" : ["oredict:ingotIron:1"]
-	}
-}

@@ -12,9 +12,9 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle"
 
 //Set file name.
-version = "V25"
+version = "V1.1"
 group = "minecrafttransportsimulator"
-archivesBaseName = "MTS Official Pack"
+archivesBaseName = "ACME Heavy Industries Pack"
 
 //Options for Java version to compile to.
 sourceCompatibility = targetCompatibility = "1.8"

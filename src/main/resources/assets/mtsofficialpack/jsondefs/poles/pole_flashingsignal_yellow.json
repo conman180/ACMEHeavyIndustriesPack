@@ -1,7 +1,0 @@
-{
-    "general": {
-        "name" : "Flashing Yellow Signal",
-		"type" : "street_light",
-		"materials" : ["oredict:dyeYellow:1", "oredict:dustGlowstone:3", "minecraft:stone_slab:0:1"]
-	}
-}
