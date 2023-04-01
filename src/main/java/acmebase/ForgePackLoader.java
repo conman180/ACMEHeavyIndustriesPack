@@ -1,4 +1,4 @@
-package acmeheavyindustries;
+package acmebase;
 import net.minecraftforge.fml.common.Mod;
 
 /**
@@ -7,7 +7,7 @@ import net.minecraftforge.fml.common.Mod;
  *
  * @author don_bruce
  */
-@Mod("acmeheavyindustries")
+@Mod("acmebase")
 public class ForgePackLoader {
 
     public ForgePackLoader() {}

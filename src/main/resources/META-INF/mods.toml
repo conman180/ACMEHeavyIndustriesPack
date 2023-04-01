@@ -11,7 +11,7 @@ license="All rights reserved"
 
 [[mods]] 
 # The ID of your pack.
-modIds="acmeheavyindustries"
+modId="acmearmory"
 # Version number.  Can be whatever format you'd like.
 version="V1.1"
  # Display name for the pack in the in-game mods list.
@@ -25,15 +25,41 @@ description='''
 A companion to the official pack; this centers mainly around military aviation from all eras however is not limited solely to it.
 '''
 
-[[dependencies.acmeheavyindustries]]
+[[mods]]
+# The ID of your pack.
+modId="acmebase"
+# Version number.  Can be whatever format you'd like.
+version="V1.1"
+ # Display name for the pack in the in-game mods list.
+displayName="ACME Heavy Industries"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+# Pack logo.
+logoFile="vingette.png"
+# The description text for the pack (multi line!)
+description='''
+A companion pack to the official pack for Immersive Vehicles.
+'''
+
+[[mods]]
+# The ID of your pack.
+modId="acmecivil"
+# Version number.  Can be whatever format you'd like.
+version="V1.1"
+ # Display name for the pack in the in-game mods list.
+displayName="ACME H.I. Civilian Sector"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+# Pack logo.
+logoFile="vingette.png"
+# The description text for the pack (multi line!)
+description='''
+Civilian Sector of ACME Heavy Industries.
+'''
+
+[[dependencies.acmebase]]
     modId="mts"
     mandatory=true
     versionRange="[22.6.0,)"
-    ordering="NONE"
-    side="BOTH"
-[[dependencies.acmeheavyindustries]]
-    modId="mtsofficialpack"
-    mandatory=true
-    versionRange="[V24)"
     ordering="NONE"
     side="BOTH"
