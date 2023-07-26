@@ -60,6 +60,7 @@ Civilian Sector of ACME Heavy Industries.
 [[dependencies.acmebase]]
     modId="mts"
     mandatory=true
-    versionRange="[22.6.0,)"
+    versionRange="[22.10.0,)"
     ordering="NONE"
     side="BOTH"
+
