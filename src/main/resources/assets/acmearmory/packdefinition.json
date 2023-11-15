@@ -1,0 +1,8 @@
+{
+"packID":"acmearmory",
+"packName":"ACME H.I. Armories",
+"fileStructure":1,
+"dependents":["mtsofficialpack"],
+"externalSkinsInOwnTab":false,
+"packItem":"f5e_mig28"
+}

@@ -1,0 +1,93 @@
+{
+"general":
+	{
+	"name":"HAVM-87/A Pylon",
+	"health":100,
+	"type":"gun_pylon_standard",
+	"customType":"missile_vehicle_heavy",
+	"description":"Mounting hardware for the HAVM-87/A",
+	"materialLists":[
+		["oredict:ingotIron:8","minecraft:redstone:5"]
+		]
+	},
+"gun":
+	{
+	"lockOnType":"default",
+	"targetType":"hard",
+	"lockRange":1024,
+	"autoReload":true,
+	"capacity":1,
+	"reloadTime":3,
+	"isSemiAuto":true,
+	"fireSolo":true,
+	"muzzleVelocity":0,
+	"fireDelay":15.0,
+	"diameter":250,
+	"minCaseLength":2000.0,
+	"maxCaseLength":2000.0,
+	"muzzleGroups":
+		[
+		{
+		"muzzles":
+			[
+			{
+			"pos":[0.0,-0.46875,0.4375]
+			}
+			]
+		}
+		]
+	},
+"definitions":
+	[
+	{
+	"subName":"",
+	"name":"HAVM-87/A Pylon",
+	"modelName":"pylon_avm_heavy",
+	"textureName":"pylon_avm_heavy",
+	"extraMaterials":[]
+	}
+	],
+"rendering":
+	{
+	"animatedObjects":
+		[
+		{
+		"objectName":"missile",
+		"animations":
+			[
+			{
+			"animationType":"visibility",
+			"variable":"gun_ammo_count",
+			"clampMin":1.0,
+			"clampMax":1.0
+			}
+			]
+		}
+		],
+	"sounds":
+		[
+		{
+		"name":"acmearmory:heatseekerlock",
+		"activeAnimations":
+			[
+			{
+			"animationType":"visibility",
+			"variable":"!gun_active"
+			},
+			{
+			"animationType":"visibility",
+			"variable":"!gun_lockedon"
+			},
+			{
+			"animationType":"visibility",
+			"variable":"gun_ammo_count",
+			"clampMin":0.0,
+			"clampMax":1.0
+			}
+			],
+		"looping":true
+		}
+		],
+	"modelType":"obj"
+	}
+}

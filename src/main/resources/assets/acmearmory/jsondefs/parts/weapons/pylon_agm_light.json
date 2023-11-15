@@ -1,0 +1,92 @@
+{
+"general":
+	{
+	"name":"LAGM-41/A Pylon",
+	"health":100,
+	"type":"gun_pylon_standard",
+	"customType":"missile_ground_light",
+	"description":"Mounting hardware for the LAGM-41/A",
+	"materialLists":[
+		["oredict:ingotIron:8","minecraft:redstone:5"]
+		]
+	},
+"gun":
+	{
+	"lockOnType":"default",
+	"targetType":"ground",
+	"autoReload":true,
+	"capacity":1,
+	"reloadTime":3,
+	"isSemiAuto":true,
+	"fireSolo":true,
+	"muzzleVelocity":0,
+	"fireDelay":20.0,
+	"diameter":93.75,
+	"minCaseLength":1600.0,
+	"maxCaseLength":1600.0,
+	"muzzleGroups":
+		[
+		{
+		"muzzles":
+			[
+			{
+			"pos":[0.0,-0.225,0.0]
+			}
+			]
+		}
+		]
+	},
+"definitions":
+	[
+	{
+	"subName":"",
+	"name":"LAGM-41/A Pylon",
+	"modelName":"pylon_agm_light",
+	"textureName":"pylon_agm_light",
+	"extraMaterials":[]
+	}
+	],
+"rendering":
+	{
+	"animatedObjects":
+		[
+		{
+		"objectName":"missile",
+		"animations":
+			[
+			{
+			"animationType":"visibility",
+			"variable":"gun_ammo_count",
+			"clampMin":1.0,
+			"clampMax":1.0
+			}
+			]
+		}
+		],
+	"sounds":
+		[
+		{
+		"name":"acmearmory:heatseekerlock",
+		"activeAnimations":
+			[
+			{
+			"animationType":"visibility",
+			"variable":"!gun_active"
+			},
+			{
+			"animationType":"visibility",
+			"variable":"!gun_lockedon"
+			},
+			{
+			"animationType":"visibility",
+			"variable":"gun_ammo_count",
+			"clampMin":0.0,
+			"clampMax":1.0
+			}
+			],
+		"looping":true
+		}
+		],
+	"modelType":"obj"
+	}
+}
