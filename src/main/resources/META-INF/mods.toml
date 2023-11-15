@@ -13,11 +13,11 @@ license="All rights reserved"
 # The ID of your pack.
 modId="acmearmory"
 # Version number.  Can be whatever format you'd like.
-version="V1.1"
+version="VV2.0Beta"
  # Display name for the pack in the in-game mods list.
 displayName="ACME Heavy Industries Pack for Immersive Vehicles"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
-displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
@@ -29,11 +29,11 @@ A companion to the official pack; this centers mainly around military aviation f
 # The ID of your pack.
 modId="acmebase"
 # Version number.  Can be whatever format you'd like.
-version="V1.1"
+version="VV2.0Beta"
  # Display name for the pack in the in-game mods list.
 displayName="ACME Heavy Industries"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
-displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
@@ -45,11 +45,11 @@ A companion pack to the official pack for Immersive Vehicles.
 # The ID of your pack.
 modId="acmecivil"
 # Version number.  Can be whatever format you'd like.
-version="V1.1"
+version="VV2.0Beta"
  # Display name for the pack in the in-game mods list.
 displayName="ACME H.I. Civilian Sector"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
-displayURL="https://www.curseforge.com/minecraft/mc-mods/minecraft-transport-simulator"
+displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
 logoFile="vingette.png"
 # The description text for the pack (multi line!)
@@ -57,10 +57,27 @@ description='''
 Civilian Sector of ACME Heavy Industries.
 '''
 
+[[mods]]
+# The ID of your pack.
+modId="acmetesting"
+# Version number.  Can be whatever format you'd like.
+version="V2.0Beta"
+ # Display name for the pack in the in-game mods list.
+displayName="ACME H.I. Experimental Division"
+# A URL for the "homepage" for this pack, displayed in the mod UI.
+displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
+# Pack logo.
+logoFile="vingette.png"
+# The description text for the pack (multi line!)
+description='''
+Unfinished, or experimental features. Liable to change.
+Also used as an update buffer for major changes to existing vehicles.
+'''
+
 [[dependencies.acmebase]]
     modId="mts"
     mandatory=true
-    versionRange="[22.10.0,)"
+    versionRange="[22.12.0,)"
     ordering="NONE"
     side="BOTH"
 
