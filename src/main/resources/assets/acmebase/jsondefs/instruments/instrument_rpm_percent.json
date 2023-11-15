@@ -1,0 +1,43 @@
+{
+	"general":
+	{
+	"name":"RPM Percentage Indicator",
+	"description":"Indicates percent of RPM relative to the max safe RPM of an engine. Useful for jet engines",
+	"materials":
+		[
+		"minecraft:glass_pane:1",
+		"oredict:dyeWhite:1",
+		"minecraft:redstone:2"
+		]
+	},
+	"textureName":"instrumentpage1.png",
+	"components":
+		[
+		{
+		"scale":1.0,
+		"textureXCenter":192,
+		"textureYCenter":320,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1.0,
+		"textObject":
+			{
+			"pos":[42.0,24.0,0.0],
+			"rot":[0.0,0.0,0.0],
+			"scale":3.75,
+			"variableName":"engine_rpm_percent_safe",
+			"variableFactor":100.0,
+			"variableFormat":"%02.0f",
+			"defaultText":"",
+			"color":"FFFFFF",
+			"lightsUp":true,
+			"renderPosition":2
+			},
+		"textFactor":1.0,
+		"lightUpTexture":true
+		}
+		]
+}

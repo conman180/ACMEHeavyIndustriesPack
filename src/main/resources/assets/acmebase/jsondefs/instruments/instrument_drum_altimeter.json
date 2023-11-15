@@ -1,0 +1,43 @@
+{
+	"general":
+		{
+		"name":"Drum-TypeAltimeter",
+		"description":"Indicates altitude with a digital readout",
+		"materials":
+			[
+			"minecraft:glass_pane:1",
+			"minecraft:redstone:2",
+			"oredict:ingotIron:2"
+			]
+		},
+	"textureName":"instrumentpage1.png",
+	"components":
+		[
+		{
+		"scale":1.0,
+		"textureXCenter":192,
+		"textureYCenter":192,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1.0,
+		"textObject":
+			{
+			"pos":[52.0,24.0,0.0],
+			"rot":[0.0,0.0,0.0],
+			"scale":3.75,
+			"variableName":"altitude",
+			"variableFactor":1.0,
+			"variableFormat":"%04.0f",
+			"defaultText":"",
+			"color":"FFFFFF",
+			"lightsUp":true,
+			"renderPosition":2
+			},
+		"textFactor":1.0,
+		"lightUpTexture":true
+		}
+		]
+}

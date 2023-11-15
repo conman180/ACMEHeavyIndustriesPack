@@ -1,0 +1,8 @@
+{
+"packID":"acmecivil",
+"packName":"ACME H.I. Civilian Sector",
+"fileStructure":1,
+"dependents":["mtsofficialpack"],
+"externalSkinsInOwnTab":false,
+"packItem":"pj180"
+}

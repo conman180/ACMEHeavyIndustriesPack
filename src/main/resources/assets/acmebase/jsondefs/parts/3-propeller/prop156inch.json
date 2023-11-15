@@ -1,0 +1,22 @@
+{
+	"general":
+	{
+	"name":"ACME Standard 156'' Propeller(Dynamic Pitch)",
+	"description":"Used on the ACME R-1860",
+	"type":"propeller",
+	"materials":
+		[
+		"oredict:dyeYellow:1",
+		"oredict:ingotIron:9",
+		"minecraft:redstone:5",
+		"minecraft:lever:1"
+		]
+	},
+	"propeller":
+	{
+	"pitch":45,
+	"diameter":156,
+	"startingHealth":100,
+	"isDynamicPitch":true
+	}
+}

@@ -1,0 +1,44 @@
+{
+	"general":
+		{
+		"name":"Drum-Type Airspeed Indicator",
+		"description":"Indicates knots(scaled) and displays a numeric value rather than a rotating dial.",
+		"materials":
+			[
+			"minecraft:glass_pane:1",
+			"minecraft:redstone:2",
+			"minecraft:feather:1",
+			"oredict:ingotIron:2"
+			]
+		},
+	"textureName":"instrumentpage1.png",
+	"components":
+		[
+		{
+		"scale":1.0,
+		"textureXCenter":192,
+		"textureYCenter":64,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1.0,
+		"textObject":
+			{
+			"pos":[52.0,24.0,0.0],
+			"rot":[0.0,0.0,0.0],
+			"scale":3.75,
+			"variableName":"speed_scaled",
+			"variableFactor":1.944,
+			"variableFormat":"%04.0f",
+			"defaultText":"",
+			"color":"FFFFFF",
+			"lightsUp":true,
+			"renderPosition":2
+			},
+		"textFactor":1.0,
+		"lightUpTexture":true
+		}
+		]
+}

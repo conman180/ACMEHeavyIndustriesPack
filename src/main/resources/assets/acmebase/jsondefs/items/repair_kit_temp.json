@@ -1,0 +1,16 @@
+{
+  "item": {
+    "type": "repair_pack"
+  },
+  "repair":{
+	"canRepairTotaled":true,
+	"amount":50
+  },
+  "general": {
+    "name": "Temp Repair Kit Example",
+	"stackSize":32,
+    "materialLists": [
+      []
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+	"general":
+	{
+	"name":"Small Drop Tank",
+	"health":80,
+	"materials":
+		[
+		"oredict:ingotIron:10"
+		]
+	},
+	"generic":
+	{
+	"canBePlacedOnGround":true,
+	"fallsToGround":true,
+	"placedOffset":0.5,
+	"type":"interactable_barrel",
+	"customType":"droptank_small",
+	"destroyable":true
+	},
+	"interactable":
+	{
+	"interactionType":"barrel",
+	"feedsVehicles":true,
+	"inventoryUnits":0.5
+	},	
+	"definitions":
+		[
+		{
+		"subName":"",
+		"name":"Small Drop Tank (Unpainted)",
+		"extraMaterials":[]
+		}
+		]
+}

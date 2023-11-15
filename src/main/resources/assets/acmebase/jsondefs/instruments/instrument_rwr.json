@@ -1,0 +1,141 @@
+{
+	"general":
+	{
+	"name":"Radar Warning Receiver",
+	"description":"Tells what direction incoming missiles are coming from. Up to 4 of them.",
+	"materials":
+		[
+		"oredict:ingotIron:4",
+		"minecraft:redstone:12",
+		"minecraft:gold_ingot:4"
+		]
+	},
+	"textureName":"instrumentpage1.png",
+	"components":
+		[
+		{
+		"scale":1.0,
+		"textureXCenter":320,
+		"textureYCenter":64,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1.0,
+		"xCenter":0,
+		"yCenter":0,
+		"textureXCenter":392,
+		"textureYCenter":8,
+		"textureWidth":16,
+		"textureHeight":16,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!missile_1_direction"
+			},
+			{
+			"animationType": "rotation",
+			"variable": "missile_1_direction",
+			"centerPoint":[0.0,0.0,0.0],
+			"axis":[0.0,0.0,1.0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"missile_incoming",
+			"axis":[0.0,35.0,0.0]
+			}
+			]
+		},
+		{
+		"scale":1.0,
+		"xCenter":0,
+		"yCenter":0,
+		"textureXCenter":392,
+		"textureYCenter":8,
+		"textureWidth":16,
+		"textureHeight":16,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!missile_2_direction"
+			},
+			{
+			"animationType": "rotation",
+			"variable": "missile_2_direction",
+			"centerPoint":[0.0,0.0,0.0],
+			"axis":[0.0,0.0,1.0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"missile_incoming",
+			"axis":[0.0,35.0,0.0]
+			}
+			]
+		},
+		{
+		"scale":1.0,
+		"xCenter":0,
+		"yCenter":0,
+		"textureXCenter":392,
+		"textureYCenter":8,
+		"textureWidth":16,
+		"textureHeight":16,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!missile_3_direction"
+			},
+			{
+			"animationType": "rotation",
+			"variable": "missile_3_direction",
+			"centerPoint":[0.0,0.0,0.0],
+			"axis":[0.0,0.0,1.0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"missile_incoming",
+			"axis":[0.0,35.0,0.0]
+			}
+			]
+		},
+		{
+		"scale":1.0,
+		"xCenter":0,
+		"yCenter":0,
+		"textureXCenter":392,
+		"textureYCenter":8,
+		"textureWidth":16,
+		"textureHeight":16,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!missile_4_direction"
+			},
+			{
+			"animationType": "rotation",
+			"variable": "missile_4_direction",
+			"centerPoint":[0.0,0.0,0.0],
+			"axis":[0.0,0.0,1.0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"missile_incoming",
+			"axis":[0.0,35.0,0.0]
+			}
+			]
+		}
+		]
+}

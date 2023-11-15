@@ -1,0 +1,22 @@
+{
+	"general":
+	{
+	"name":"ACME Standard 130'' Propeller(Dynamic Pitch)",
+	"description":"Used on the ACME R-1300",
+	"type":"propeller",
+	"materials":
+		[
+		"oredict:dyeRed:1",
+		"oredict:ingotIron:7",
+		"minecraft:redstone:5",
+		"minecraft:lever:1"
+		]
+	},
+	"propeller":
+	{
+	"pitch":10,
+	"diameter":130,
+	"startingHealth":100,
+	"isDynamicPitch":true
+	}
+}

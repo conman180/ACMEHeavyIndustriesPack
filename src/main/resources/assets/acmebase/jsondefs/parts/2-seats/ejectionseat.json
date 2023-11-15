@@ -1,0 +1,32 @@
+{
+"generic":
+	{
+	"type": "seat_ejection"
+	},
+"definitions":
+	[
+	{
+	"subName":"",
+	"name":"ACME Standard Ejection Seat",
+	"extraMaterialLists":
+		[
+		[]
+		]
+	}
+	],
+"rendering":
+	{
+	"modelType":"obj"
+	},
+"general":
+	{
+	"name": "ACME Standard Ejection Seat",
+	"materialLists":[
+		[
+		"oredict:ingotIron:6",
+		"oredict:string:8",
+		"minecraft:gunpowder:5"
+		]
+	]
+	}
+}

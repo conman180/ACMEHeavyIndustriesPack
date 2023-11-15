@@ -1,0 +1,34 @@
+{
+	"general":
+	{
+	"name":"Large Drop Tank",
+	"health":80,
+	"materials":
+		[
+		"oredict:ingotIron:20"
+		]
+	},
+	"generic":
+	{
+	"canBePlacedOnGround":true,
+	"fallsToGround":true,
+	"placedOffset":0.75,
+	"type":"interactable_barrel",
+	"customType":"droptank_large",
+	"destroyable":true
+	},
+	"interactable":
+	{
+	"interactionType":"barrel",
+	"feedsVehicles":true,
+	"inventoryUnits":1.2
+	},	
+	"definitions":
+		[
+		{
+		"subName":"",
+		"name":"Large Drop Tank (Unpainted)",
+		"extraMaterials":[]
+		}
+		]
+}

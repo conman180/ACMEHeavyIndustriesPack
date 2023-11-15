@@ -1,0 +1,8 @@
+{
+"packID":"acmebase",
+"packName":"ACME Heavy Industries",
+"fileStructure":1,
+"dependents":["mtsofficialpack"],
+"externalSkinsInOwnTab":true,
+"packItem":"enginer1300"
+}

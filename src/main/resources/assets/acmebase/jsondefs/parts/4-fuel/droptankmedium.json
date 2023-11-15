@@ -1,0 +1,34 @@
+{
+	"general":
+	{
+	"name":"Medium Drop Tank",
+	"health":80,
+	"materials":
+		[
+		"oredict:ingotIron:16"
+		]
+	},
+	"generic":
+	{
+	"canBePlacedOnGround":true,
+	"fallsToGround":true,
+	"placedOffset":0.625,
+	"type":"interactable_barrel",
+	"customType":"droptank_medium",
+	"destroyable":true
+	},
+	"interactable":
+	{
+	"interactionType":"barrel",
+	"feedsVehicles":true,
+	"inventoryUnits":0.8
+	},	
+	"definitions":
+		[
+		{
+		"subName":"",
+		"name":"Medium Drop Tank (Unpainted)",
+		"extraMaterials":[]
+		}
+		]
+}
