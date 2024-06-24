@@ -11,12 +11,12 @@
 		"minecraft:redstone:10"
 		]
 	},
-	"textureName":"instrumentpage1.png",
+	"textureName":"instrumentpage2.png",
 	"components":
 		[
 		//Base
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":64,
 		"textureYCenter":64,
 		"textureWidth":128,
@@ -25,26 +25,26 @@
 		},
 		//CDIDots
 		{
-		"scale":1.0,
-		"textureXCenter":64,
-		"textureYCenter":704,
-		"textureWidth":128,
-		"textureHeight":128,
+		"scale":1,
+		"textureXCenter":319,
+		"textureYCenter":3,
+		"textureWidth":60,
+		"textureHeight":6,
 		"lightUpTexture":true,
 		"animations":
 			[
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			}
 			]
 		},
 		//Heading
 		{
-		"textureXCenter":64,
-		"textureYCenter":192,
+		"textureXCenter":192,
+		"textureYCenter":64,
 		"textureWidth":128,
 		"textureHeight":128,
 		"lightUpTexture":true,
@@ -52,62 +52,65 @@
 			[
 			{
 			"animationType":"rotation",
-			"variable":"yaw",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"variable":"heading",
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
 		//BeaconOuterArrow
 		{
-		"scale":1.0,
-		"textureXCenter":64,
-		"textureYCenter":448,
+		"scale":1,
+		"textureXCenter":282,
+		"textureYCenter":32,
 		"textureWidth":8,
-		"textureHeight":128,
+		"textureHeight":64,
 		"lightUpTexture":true,
 		"animations":
 			[
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			}
 			]
 		},
 		//BeaconInnerArrow
 		{
-		"scale":1.0,
-		"textureXCenter":64,
-		"textureYCenter":576,
-		"textureWidth":64,
-		"textureHeight":128,
+		"scale":1,
+		"yCenter":1,
+		"textureXCenter":288,
+		"textureYCenter":35,
+		"textureWidth":2,
+		"textureHeight":44,
 		"lightUpTexture":true,
+		"moveComponent":true,
 		"animations":
 			[
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			},
 			{
 			"animationType":"translation",
 			"variable":"beacon_bearing_delta",
-			"axis":[3.15,0.0,0.0],
-			"clampMin":-30.0,
-			"clampMax":30.0
+			"axis":[3.15,0,0],
+			"clampMin":-30,
+			"clampMax":30
 			}
 			]
 		},
 		//MiniAirplane
 		{
-		"scale":1.0,
-		"textureXCenter":64,
-		"textureYCenter":320,
-		"textureWidth":128,
-		"textureHeight":128,
+		"scale":1,
+		"yCenter":-24,
+		"textureXCenter":267,
+		"textureYCenter":32,
+		"textureWidth":22,
+		"textureHeight":62,
 		"lightUpTexture":true
 		}
 	]

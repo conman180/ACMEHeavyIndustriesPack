@@ -1,54 +1,82 @@
 {
-	"general":
+"general":
 	{
-	"name":"ACME H.I. TF-43 Turbofan",
-	"description":"Used on the AJ-09",
+	"name":"ACME H.I. TF43 Turbofan",
+	"description":"Used on the AJ-09 and PJ-180",
 	"type":"engine_jet",
 	"customType":"tf43",
-	"materials":
-		[
+	"materials":[
 		"oredict:ingotIron:10",
 		"minecraft:obsidian:6",
 		"minecraft:redstone:8",
 		"minecraft:blaze_rod:2",
 		"minecraft:repeater:1"
 		],
-		"repairMaterials":
-		[
+	"repairMaterials":[
 		"oredict:ingotIron:4",
 		"minecraft:blaze_rod:2",
 		"minecraft:repeater:1"
 		]
 	},
-	"engine":
+"generic":
 	{
-	"isAutomatic":true,
-	"starterPower":10,
-	"idleRPM":800,
-	"startRPM":600,
-	"maxRPM":10000,
-	"maxSafeRPM":9000,
-	"revlimitRPM":9000,
+	"mass":760
+	},
+"engine":
+	{
+	"type":"normal",
+	"starterPower":20,
+	"idleRPM":2000,
+	"startRPM":1900,
+	"stallRPM":1800,
+	"maxRPM":18000,
+	"maxSafeRPM":18000,
+	"revlimitRPM":18000,
 	"revResistance":5,
-	"fuelConsumption":1.0,
+	"engineWinddownRate":20,
+    "heatingCoefficient":0.1,
+    "coolingCoefficient":10,
+    "engineWearFactor":0.3,
+	"fuelConsumption":1.06,
 	"fuelType":"avgas",
 	"bypassRatio":6.2,
-	"jetPowerFactor":4.1,
-	"upShiftRPM":[0,1000,7650],
-	"downShiftRPM":[0,1000,7650],
-	"gearRatios":[1.0,1.0,1.0]
+	"jetPowerFactor":2.405,
+	"gearRatios":[1,1,1]
 	},
-	"definitions":
-		[
+"definitions":[
+	{
+	"subName":"",
+	"name":"ACME H.I. TF43 Turbofan",
+	"modelName":"engineturbojet",
+	"textureName":"engineturbojet",
+	"extraMaterials":[]
+	}
+	],
+"variableModifiers":
+	[
+	],
+"collisionGroups":[
+	{
+	"collisions":[
 		{
-		"subName":"",
-		"name":"ACME H.I. TF43 Turbofan",
-		"modelName":"engineturbojet",
-		"textureName":"engineturbojet",
-		"extraMaterials":[]
+		"pos":[0,0,-0.25],
+		"width":0.5,
+		"height":0.5
+		},
+		{
+		"pos":[0,0,-0.75],
+		"width":0.5,
+		"height":0.5
+		},
+		{
+		"pos":[0,0,-1.25],
+		"width":0.5,
+		"height":0.5
 		}
-		],
-	"rendering":
+		]
+	}
+	],
+"rendering":
 	{
 	"animatedObjects":
 		[
@@ -59,8 +87,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"engine_rotation",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			}
 			]
 		}
@@ -75,24 +103,11 @@
 			{
 			"animationType":"visibility",
 			"variable":"engine_starter",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			],
 		"looping":true
-		},	
-		//Sputter
-		{
-		"name":"mtsofficialpack:enginepw610f_sputter",
-		"activeAnimations":
-			[
-			{
-			"animationType":"visibility",
-			"variable":"engine_backfired",
-			"clampMin":1.0,
-			"clampMax":1.0
-			}
-			]
 		},
 		//Stopping
 		{
@@ -115,13 +130,13 @@
 			{
 			"animationType":"visibility",
 			"variable":"engine_powered",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			},
 			{
 			"animationType":"translation",
 			"variable":"engine_rpm_percent",
-			"axis":[0.0,1.0,0.0],
+			"axis":[0,1,0],
 			"offset":0.5
 			}
 			],
@@ -130,7 +145,7 @@
 			{
 			"animationType":"translation",
 			"variable":"engine_rpm_percent",
-			"axis":[0.0,0.5,0.0],
+			"axis":[0,0.5,0],
 			"offset":0.8
 			}
 			],
@@ -145,13 +160,13 @@
 			{
 			"animationType":"visibility",
 			"variable":"engine_powered",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			},
 			{
 			"animationType":"translation",
 			"variable":"engine_rpm_percent",
-			"axis":[0.0,1.0,0.0],
+			"axis":[0,1,0],
 			"offset":0.5
 			}
 			],
@@ -160,7 +175,7 @@
 			{
 			"animationType":"translation",
 			"variable":"engine_rpm_percent",
-			"axis":[0.0,0.5,0.0],
+			"axis":[0,0.5,0],
 			"offset":0.8
 			}
 			],

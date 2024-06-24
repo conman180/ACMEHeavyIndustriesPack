@@ -25,12 +25,12 @@
 		"scale": 1.0,
 		"textObject": 
 			{
-			"pos": [42.0,24.0,0.0],
+			"pos": [35.0,24.0,0.0],
 			"rot": [0.0,0.0,0.0],
-			"scale": 3.75,
-			"variableName": "engine_rpm",
-			"variableFactor": 1.0,
-			"variableFormat": "%04.0f",
+			"scale": 2.75,
+			"variableName": "engine_fuel_flow_1",
+			"variableFactor":0.833,
+			"variableFormat": "%02.3f",
 			"defaultText": "",
 			"color": "FFFFFF",
 			"lightsUp": true,

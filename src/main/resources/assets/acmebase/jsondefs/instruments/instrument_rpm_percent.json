@@ -10,34 +10,35 @@
 		"minecraft:redstone:2"
 		]
 	},
-	"textureName":"instrumentpage1.png",
+	"textureName":"instrumentpage2.png",
 	"components":
 		[
 		{
-		"scale":1.0,
-		"textureXCenter":192,
-		"textureYCenter":320,
+		"scale":1,
+		"textureXCenter":64,
+		"textureYCenter":832,
 		"textureWidth":128,
 		"textureHeight":128,
 		"lightUpTexture":true
 		},
 		{
-		"scale":1.0,
-		"textObject":
+		"scale":1,
+		"yCenter":-25,
+		"textureXCenter":265,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
 			{
-			"pos":[42.0,24.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":3.75,
-			"variableName":"engine_rpm_percent_safe",
-			"variableFactor":100.0,
-			"variableFormat":"%02.0f",
-			"defaultText":"",
-			"color":"FFFFFF",
-			"lightsUp":true,
-			"renderPosition":2
-			},
-		"textFactor":1.0,
-		"lightUpTexture":true
+			"animationType":"rotation",
+			"variable":"engine_rpm_percent_safe",
+			"centerPoint":[0,25,0],
+			"axis":[0,0,270]
+			}
+			]
 		}
 		]
 }

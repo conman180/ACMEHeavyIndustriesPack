@@ -15,7 +15,7 @@
 	"components":
 		[
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":192,
 		"textureYCenter":64,
 		"textureWidth":128,
@@ -23,11 +23,11 @@
 		"lightUpTexture":true
 		},
 		{
-		"scale":1.0,
+		"scale":1,
 		"textObject":
 			{
-			"pos":[52.0,24.0,0.0],
-			"rot":[0.0,0.0,0.0],
+			"pos":[52,24,0],
+			"rot":[0,0,0],
 			"scale":3.75,
 			"variableName":"speed_scaled",
 			"variableFactor":1.944,
@@ -37,7 +37,7 @@
 			"lightsUp":true,
 			"renderPosition":2
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		}
 		]

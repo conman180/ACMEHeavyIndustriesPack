@@ -12,16 +12,60 @@
 	{
 	"canBePlacedOnGround":true,
 	"fallsToGround":true,
-	"placedOffset":0.75,
 	"type":"interactable_barrel",
 	"customType":"droptank_large",
 	"destroyable":true
 	},
+	"collisionGroups":
+	[
+	{
+	"collisionTypes":["block","entity","bullet"],
+	"collisions":
+		[
+		{
+		"pos":[0,-0.4375,2.25],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,1.5],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,0.75],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,0],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,-0.75],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,-1.5],
+		"height":0.75,
+		"width":0.75
+		},
+		{
+		"pos":[0,-0.4375,-2.25],
+		"height":0.75,
+		"width":0.75
+		}
+		]
+	}
+	],
 	"interactable":
 	{
 	"interactionType":"barrel",
 	"feedsVehicles":true,
-	"inventoryUnits":1.2
+	"hasBlowoutPanels":true,
+	"inventoryUnits":3.22
 	},	
 	"definitions":
 		[

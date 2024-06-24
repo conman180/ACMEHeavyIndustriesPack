@@ -1,7 +1,13 @@
 {
 "generic":
 	{
-	"type": "seat_ejection"
+	"type":"seat_ejection",
+	"canBePlacedOnGround":true,
+	"fallsToGround":true
+	},
+"seat":
+	{
+	"playerScale":[1,1,1]
 	},
 "definitions":
 	[
@@ -14,13 +20,37 @@
 		]
 	}
 	],
+"collisionGroups":
+	[
+	{
+	"collisionTypes":["block","entity"],
+	"collisions":
+		[
+		{
+		"pos":[0,-0.1875,0],
+		"height":0.375,
+		"width":0.875
+		},
+		{
+		"pos":[0.1875,0.375,-0.25],
+		"height":0.75,
+		"width":0.375
+		},
+		{
+		"pos":[-0.1875,0.375,-0.25],
+		"height":0.75,
+		"width":0.375
+		}
+		]
+	}
+	],
 "rendering":
 	{
 	"modelType":"obj"
 	},
 "general":
 	{
-	"name": "ACME Standard Ejection Seat",
+	"name":"ACME Standard Ejection Seat",
 	"materialLists":[
 		[
 		"oredict:ingotIron:6",

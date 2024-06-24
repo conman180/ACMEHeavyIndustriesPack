@@ -1,0 +1,50 @@
+{
+	"general":
+		{
+		"name":"Radar Altimeter",
+		"description":"Indicates height above terrain.",
+		"materials":
+			[
+			"minecraft:glass_pane:1",
+			"minecraft:redstone:2",
+			"oredict:ingotIron:2"
+			]
+		},
+	"textureName":"instrumentpage2.png",
+	"components":
+		[
+		{
+		"scale":1,
+		"textureXCenter":64,
+		"textureYCenter":448,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1,
+		"yCenter":-26,
+		"textureXCenter":259,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis":[0,0.5,0]
+			},
+			{
+			"animationType":"rotation",
+			"variable":"terrain_distance",
+			"centerPoint":[-1,26,0],
+			"axis":[0,0,2.7],
+			"clampMax":300
+			}
+			]
+		}
+		]
+}

@@ -16,7 +16,7 @@
 		[
 		//AttitudeColors
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":-64,
 		"textureXCenter":832,
@@ -29,19 +29,19 @@
 			{
 			"animationType":"translation",
 			"variable":"pitch",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,2.8,0.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,2.8,0]
 			},
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":128,
 		"textureYCenter":128,
 		"textureWidth":256,
@@ -50,7 +50,7 @@
 		},
 		//AttitudeBase
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":-64,
 		"textureXCenter":64,
@@ -63,14 +63,14 @@
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
 		//PitchLadder
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":-64,
 		"textureXCenter":960,
@@ -83,20 +83,20 @@
 			{
 			"animationType":"translation",
 			"variable":"pitch",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,2.8,0.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,2.8,0]
 			},
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
 		//Bank&MiniPlane
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":-64,
 		"textureXCenter":192,
@@ -107,7 +107,7 @@
 		},
 		//Heading
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":62,
 		"textureXCenter":320,
@@ -120,15 +120,15 @@
 			{
 			"animationType":"rotation",
 			"variable":"heading",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
 		//ADF&CDIStuff
 		//Dots
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":62,
 		"textureXCenter":320,
@@ -141,14 +141,14 @@
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			}
 			]
 		},
 		//OuterArrow
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":62,
 		"textureXCenter":320,
@@ -161,14 +161,14 @@
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			}
 			]
 		},
 		//InnerArrow
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":62,
 		"textureXCenter":320,
@@ -182,21 +182,21 @@
 			{
 			"animationType":"rotation",
 			"variable":"beacon_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,1]
 			},
 			{
 			"animationType":"translation",
 			"variable":"beacon_bearing_delta",
-			"axis":[3.15,0.0,0.0],
-			"clampMin":-30.0,
-			"clampMax":30.0
+			"axis":[3.15,0,0],
+			"clampMin":-30,
+			"clampMax":30
 			}
 			]
 		},
 		//MiniAirplane
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":0,
 		"yCenter":62,
 		"textureXCenter":320,
@@ -207,7 +207,7 @@
 		},
 		//VSI
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":119,
 		"yCenter":-63,
 		"textureXCenter":9,
@@ -221,15 +221,15 @@
 			{
 			"animationType":"translation",
 			"variable":"vertical_speed",
-			"axis":[0.0,12.75,0.0],
-			"clampMin":-52.0,
-			"clampMax":52.0
+			"axis":[0,12.75,0],
+			"clampMin":-52,
+			"clampMax":52
 			}
 			]
 		},
 		//Glideslope
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":77,
 		"yCenter":63,
 		"textureXCenter":8,
@@ -243,15 +243,15 @@
 			{
 			"animationType":"translation",
 			"variable":"beacon_glideslope_delta",
-			"axis":[0.0,1.0,0.0],
-			"clampMin":-30.0,
-			"clampMax":30.0
+			"axis":[0,1,0],
+			"clampMin":-30,
+			"clampMax":30
 			}
 			]
 		},
 		//Autopilot
 		{
-		"scale":1.0,
+		"scale":1,
 		"xCenter":-90,
 		"yCenter":-115,
 		"textureXCenter":29,
@@ -270,31 +270,31 @@
 		//Text
 		//Heading
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-98.0,-110.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-98,-110,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"heading",
-			"variableFactor":1.0,
+			"variableFactor":1,
 			"variableFormat":"%03.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":0
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Speed
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-65.0,68.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-65,68,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"speed_scaled",
 			"variableFactor":1.944,
 			"variableFormat":"%03.0f",
@@ -303,102 +303,102 @@
 			"lightsUp":true,
 			"renderPosition":2
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Altitude
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[64.0,68.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[64,68,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"altitude",
-			"variableFactor":1.0,
+			"variableFactor":1,
 			"variableFormat":"%03.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":1
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Throttle
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-99.0,-6.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-99,-6,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"throttle",
-			"variableFactor":100.0,
+			"variableFactor":100,
 			"variableFormat":"%03.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":1
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Fuel
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-96.0,-22.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-96,-22,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"fuel",
-			"variableFactor":100.0,
+			"variableFactor":100,
 			"variableFormat":"%02.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":1
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Flaps
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-94.0,-39.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-94,-39,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"flaps_setpoint",
-			"variableFactor":1.0,
+			"variableFactor":1,
 			"variableFormat":"%02.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":1
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		},
 		//Damage
 		{
-		"scale": 1.0,
+		"scale": 1,
 		"textObject":
 			{
-			"pos":[-98.0,-55.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-98,-55,0],
+			"rot":[0,0,0],
+			"scale":1,
 			"variableName":"damage_percent",
-			"variableFactor":100.0,
+			"variableFactor":100,
 			"variableFormat":"%02.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":1
 			},
-		"textFactor":1.0,
+		"textFactor":1,
 		"lightUpTexture":true
 		}
 		]

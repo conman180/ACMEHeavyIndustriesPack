@@ -35,17 +35,17 @@
 			[
 			{
 			"animationType": "visibility",
-			"variable": "!missile_1_direction"
+			"variable": "!radar_1_detected"
 			},
 			{
 			"animationType": "rotation",
-			"variable": "missile_1_direction",
+			"variable": "radar_1_direction",
 			"centerPoint":[0.0,0.0,0.0],
 			"axis":[0.0,0.0,1.0]
 			},
 			{
 			"animationType":"translation",
-			"variable":"missile_incoming",
+			"variable":"radar_1_detected",
 			"axis":[0.0,35.0,0.0]
 			}
 			]
@@ -64,75 +64,17 @@
 			[
 			{
 			"animationType": "visibility",
-			"variable": "!missile_2_direction"
+			"variable": "!radar_2_detected"
 			},
 			{
 			"animationType": "rotation",
-			"variable": "missile_2_direction",
+			"variable": "radar_2_direction",
 			"centerPoint":[0.0,0.0,0.0],
 			"axis":[0.0,0.0,1.0]
 			},
 			{
 			"animationType":"translation",
-			"variable":"missile_incoming",
-			"axis":[0.0,35.0,0.0]
-			}
-			]
-		},
-		{
-		"scale":1.0,
-		"xCenter":0,
-		"yCenter":0,
-		"textureXCenter":392,
-		"textureYCenter":8,
-		"textureWidth":16,
-		"textureHeight":16,
-		"lightUpTexture":true,
-		"moveComponent":true,
-		"animations":
-			[
-			{
-			"animationType": "visibility",
-			"variable": "!missile_3_direction"
-			},
-			{
-			"animationType": "rotation",
-			"variable": "missile_3_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
-			},
-			{
-			"animationType":"translation",
-			"variable":"missile_incoming",
-			"axis":[0.0,35.0,0.0]
-			}
-			]
-		},
-		{
-		"scale":1.0,
-		"xCenter":0,
-		"yCenter":0,
-		"textureXCenter":392,
-		"textureYCenter":8,
-		"textureWidth":16,
-		"textureHeight":16,
-		"lightUpTexture":true,
-		"moveComponent":true,
-		"animations":
-			[
-			{
-			"animationType": "visibility",
-			"variable": "!missile_4_direction"
-			},
-			{
-			"animationType": "rotation",
-			"variable": "missile_4_direction",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,1.0]
-			},
-			{
-			"animationType":"translation",
-			"variable":"missile_incoming",
+			"variable":"radar_2_detected",
 			"axis":[0.0,35.0,0.0]
 			}
 			]

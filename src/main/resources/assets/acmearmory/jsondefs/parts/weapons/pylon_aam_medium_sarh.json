@@ -21,6 +21,7 @@
 	"capacity":1,
 	"reloadTime":3,
 	"isSemiAuto":true,
+	"locksFromParent":true,
 	"fireSolo":true,
 	"muzzleVelocity":0,
 	"fireDelay":20.0,

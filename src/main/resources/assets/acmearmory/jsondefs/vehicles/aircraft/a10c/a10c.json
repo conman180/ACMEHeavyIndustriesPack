@@ -33,21 +33,20 @@
 	"hasRadioNav":true,
 	"hasNavLights":true,
 	"hasStrobeLights":true,
-	"hasTaxiLights":false,
 	"hasLandingLights":true,
 	"hasFlaps":true,
-	"emptyMass":11000,
-	"fuelCapacity":15000,
+	"emptyMass":11300,
+	"fuelCapacity":87320,
 	"gearSequenceDuration":80,
 	"brakingFactor":2.0,
 	"dragCoefficient":0.02,
-	"tailDistance":5.0,
+	"tailDistance":7,
 	"wingSpan":17.5,
-	"wingArea":47.0,
+	"flapSpeed":0.6,
+	"wingArea":23.5,
 	"aileronArea":6.0,
 	"elevatorArea":4.0,
 	"rudderArea":1.0,
-	"flapSpeed":0.5,
 	"flapNotches":[0.0,5.0,10.0,25.0]
 	},
 "parts":
@@ -91,9 +90,6 @@
 	"isController":true,
 	"canDisableGun":true,
 	"types":["seat_ejection"],
-	"interactableVariables":[
-		["canopy"]
-		],
 	"animations":
 		[
 		{
@@ -123,8 +119,8 @@
 	"pos":[1.59375,1.53125,-1.8125],
 	"rot":[-6.0,0.0,0.0],
 	"partScale":[2.5,2.5,2.0],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"minValue":1.06,
+	"maxValue":1.06,
 	"types":["engine_jet"],
 	"customTypes":["tf43"],
 	"interactableVariables":[
@@ -135,24 +131,12 @@
 	"pos":[-1.59375,1.53125,-1.8125],
 	"rot":[-6.0,0.0,0.0],
 	"partScale":[2.5,2.5,2.0],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"minValue":1.06,
+	"maxValue":1.06,
 	"types":["engine_jet"],
 	"customTypes":["tf43"],
 	"interactableVariables":[
 		["enginebay_r"]
-		]
-	},
-	//Droptank
-	{
-	"pos":[0.0,0.0,0.5],
-	"minValue":0.0,
-	"maxValue":1000.0,
-	"types":["interactable_barrel"],
-	"customTypes":["droptank_large"],
-	"transferVariable":"DROP_TANK",
-	"interactableVariables":[
-		["!part_present_17"]
 		]
 	},
 	//Weapons
@@ -165,149 +149,417 @@
 	"types":["gun_fixed"],
 	"customTypes":["gun_rotary_heavy"]
 	},
-	//Hardpoints
-	//OuttoInLtoR
+	//Hardpoint1
 	{
 	"pos":[6.375,0.2525,0.71875],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_light",
-		"missile_vehicle_medium",
-		"missile_ground_light",
-		"missile_ground_medium",
-		"missile_air_light"
+	"customTypes":["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_9"],
+		["!part_present_10"],
+		["!part_present_11"]
 		]
 	},
+	{
+	"pos":[6.375,0.2525,0.71874],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["missile_air_light_2x"],
+	"interactableVariables":[
+		["!part_present_8"],
+		["!part_present_10"],
+		["!part_present_11"]
+		]
+	},
+	{
+	"pos":[6.375,0.2525,0.71873],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_100"],
+	"interactableVariables":[
+		["!part_present_8"],
+		["!part_present_9"],
+		["!part_present_11"]
+		]
+	},
+	{
+	"pos":[6.375,0.2525,0.71872],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_8"],
+		["!part_present_9"],
+		["!part_present_10"]
+		]
+	},
+	//Hardpoint2
 	{
 	"pos":[-6.375,0.2525,0.71875],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_light",
-		"missile_vehicle_medium",
-		"missile_ground_light",
-		"missile_ground_medium",
-		"missile_air_light",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
+	"customTypes":["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_13"],
+		["!part_present_14"],
+		["!part_present_15"]
 		]
 	},
+	{
+	"pos":[-6.375,0.2525,0.71874],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["missile_air_light_2x"],
+	"interactableVariables":[
+		["!part_present_12"],
+		["!part_present_14"],
+		["!part_present_15"]
+		]
+	},
+	{
+	"pos":[-6.375,0.2525,0.71873],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_100"],
+	"interactableVariables":[
+		["!part_present_12"],
+		["!part_present_13"],
+		["!part_present_15"]
+		]
+	},
+	{
+	"pos":[-6.375,0.2525,0.71872],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_12"],
+		["!part_present_13"],
+		["!part_present_14"]
+		]
+	},
+	//Hardpoint3
 	{
 	"pos":[5.125,0.126,0.8125],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_ground_light",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
+	"customTypes":["pod_rocket_light"],
+	"interactableVariables":[
+		["!part_present_17"],
+		["!part_present_18"]
 		]
 	},
+	{
+	"pos":[5.125,0.126,0.8124],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_medium"],
+	"interactableVariables":[
+		["!part_present_16"],
+		["!part_present_18"]
+		]
+	},
+	{
+	"pos":[5.125,0.126,0.8123],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_16"],
+		["!part_present_17"]
+		]
+	},
+	//Hardpoint4
 	{
 	"pos":[-5.125,0.126,0.8125],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_ground_light",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
+	"customTypes":["pod_rocket_light"],
+	"interactableVariables":[
+		["!part_present_20"],
+		["!part_present_21"]
 		]
 	},
+	{
+	"pos":[-5.125,0.126,0.8124],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_medium"],
+	"interactableVariables":[
+		["!part_present_19"],
+		["!part_present_21"]
+		]
+	},
+	{
+	"pos":[-5.125,0.126,0.8123],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_19"],
+		["!part_present_20"]
+		]
+	},
+	//Hardpoint5
 	{
 	"pos":[3.875,0.05,0.8125],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_heavy",
-		"missile_ground_light",
-		"missile_ground_light_3x",
-		"missile_ground_medium_3x",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250",
-		"pod_rocket_light"
+	"customTypes":["missile_ground_medium"],
+	"interactableVariables":[
+		["!part_present_23"],
+		["!part_present_24"],
+		["!part_present_25"],
+		["!part_present_26"],
+		["!part_present_27"]
 		]
 	},
+	{
+	"pos":[3.875,0.05,0.8124],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["missile_ground_medium_3x"],
+	"interactableVariables":[
+		["!part_present_22"],
+		["!part_present_24"],
+		["!part_present_25"],
+		["!part_present_26"],
+		["!part_present_27"]
+		]
+	},
+	{
+	"pos":[3.875,0.05,0.8123],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_light"],
+	"interactableVariables":[
+		["!part_present_22"],
+		["!part_present_23"],
+		["!part_present_25"],
+		["!part_present_26"],
+		["!part_present_27"]
+		]
+	},
+	{
+	"pos":[3.875,0.05,0.8122],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_medium"],
+	"interactableVariables":[
+		["!part_present_22"],
+		["!part_present_23"],
+		["!part_present_24"],
+		["!part_present_26"],
+		["!part_present_27"]
+		]
+	},
+	{
+	"pos":[3.875,0.05,0.8121],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_22"],
+		["!part_present_23"],
+		["!part_present_24"],
+		["!part_present_25"],
+		["!part_present_27"]
+		]
+	},
+	{
+	"pos":[3.875,0.05,0.812],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_1000"],
+	"interactableVariables":[
+		["!part_present_22"],
+		["!part_present_23"],
+		["!part_present_24"],
+		["!part_present_25"],
+		["!part_present_26"]
+		]
+	},
+	//Hardpoint6
 	{
 	"pos":[-3.875,0.05,0.8125],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_heavy",
-		"missile_ground_light",
-		"missile_ground_light_3x",
-		"missile_ground_medium",
-		"missile_ground_medium_3x",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250",
-		"pod_rocket_light"
+	"customTypes":["missile_ground_medium"],
+	"interactableVariables":[
+		["!part_present_29"],
+		["!part_present_30"],
+		["!part_present_31"],
+		["!part_present_32"],
+		["!part_present_33"]
 		]
 	},
+	{
+	"pos":[-3.875,0.05,0.8124],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["missile_ground_medium_3x"],
+	"interactableVariables":[
+		["!part_present_28"],
+		["!part_present_30"],
+		["!part_present_31"],
+		["!part_present_32"],
+		["!part_present_33"]
+		]
+	},
+	{
+	"pos":[-3.875,0.05,0.8123],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_light"],
+	"interactableVariables":[
+		["!part_present_28"],
+		["!part_present_29"],
+		["!part_present_31"],
+		["!part_present_32"],
+		["!part_present_33"]
+		]
+	},
+	{
+	"pos":[-3.875,0.05,0.8122],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["pod_rocket_medium"],
+	"interactableVariables":[
+		["!part_present_28"],
+		["!part_present_29"],
+		["!part_present_30"],
+		["!part_present_32"],
+		["!part_present_33"]
+		]
+	},
+	{
+	"pos":[-3.875,0.05,0.8121],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_28"],
+		["!part_present_29"],
+		["!part_present_30"],
+		["!part_present_31"],
+		["!part_present_33"]
+		]
+	},
+	{
+	"pos":[-3.875,0.05,0.812],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_1000"],
+	"interactableVariables":[
+		["!part_present_28"],
+		["!part_present_29"],
+		["!part_present_30"],
+		["!part_present_31"],
+		["!part_present_32"]
+		]
+	},
+	//Hardpoint7
 	{
 	"pos":[1.625,-0.124,0.9375],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_heavy",
-		"missile_ground_light",
-		"missile_ground_light_3x",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_35"]
 		]
 	},
+	{
+	"pos":[1.625,-0.124,0.9374],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_1000"],
+	"interactableVariables":[
+		["!part_present_34"]
+		]
+	},
+	//Hardpoint8
 	{
 	"pos":[-1.625,-0.124,0.9375],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_vehicle_heavy",
-		"missile_ground_light",
-		"missile_ground_light_3x",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_37"]
 		]
 	},
 	{
-	"pos":[0.0,-0.1874,2.3125],
-	"minValue":62.5,
-	"maxValue":500.0,
+	"pos":[-1.625,-0.124,0.9374],
+	"minValue":0,
+	"maxValue":1000,
 	"types":["gun_pylon_standard"],
-	"customTypes":
-		[
-		"missile_ground_light",
-		"missile_ground_medium",
-		"missile_ground_heavy",
-		"bomb_unguided_100",
-		"bomb_unguided_250"
-		],
+	"customTypes":["bomb_unguided_1000"],
 	"interactableVariables":[
-		["!part_present_7"]
+		["!part_present_36"]
+		]
+	},
+	//Hardpoint9
+	{
+	"pos":[0,-0.1874,2.3125],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_250"],
+	"interactableVariables":[
+		["!part_present_39"],
+		["!part_present_40"]
+		]
+	},
+	{
+	"pos":[0,-0.1874,2.3125],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["gun_pylon_standard"],
+	"customTypes":["bomb_unguided_1000"],
+	"interactableVariables":[
+		["!part_present_38"],
+		["!part_present_40"]
+		]
+	},
+	{
+	"pos":[0,0,0.5],
+	"minValue":0,
+	"maxValue":1000,
+	"types":["interactable_barrel"],
+	"customTypes":["droptank_large"],
+	"transferVariable":"DROP_TANK",
+	"interactableVariables":[
+		["!part_present_38"],
+		["!part_present_39"]
 		]
 	}
 	],
@@ -358,7 +610,7 @@
 	"scale":0.0079,
 	"hudX":75,
 	"hudY":75,
-	"defaultInstrument":"acmebase:instrument_air_radar",
+	"defaultInstrument":"acmebase:instrument_ground_radar",
 	"hudScale":0.25
 	},
 	{
@@ -1246,7 +1498,6 @@
 	],
 "initialVariables":
 	[
-	"canopy",
 	"enginebay_l",
 	"enginebay_r"
 	],

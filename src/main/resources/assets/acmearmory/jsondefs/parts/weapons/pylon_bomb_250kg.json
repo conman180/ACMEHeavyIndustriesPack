@@ -22,14 +22,13 @@
 	"diameter":500.0,
 	"minCaseLength":1500.0,
 	"maxCaseLength":1500.0,
-	"gravitationalVelocity":0.05,
 	"muzzleGroups":
 		[
 		{
 		"muzzles":
 			[
 			{
-			"pos":[0.0,-0.125,0.0],
+			"pos":[0.0,-0.34375,0.0],
 			"rot":[0.0,0.0,0.0],
 			"center":[0.0,0.0,0.0]
 			}
@@ -42,7 +41,6 @@
 	{
 	"subName":"",
 	"name":"UGB-250 Pylon",
-	"textureName":"gun_bomb_hardpoint",
 	"extraMaterials":[]
 	}
 	],

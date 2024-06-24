@@ -20,9 +20,9 @@
 		],
 	"quantity":1,
 	"diameter":312.5,
-	"caseLength":2500.0,
+	"caseLength":2500,
 	"blastStrength":1.5,
-	"armorPenetration":20.0,
+	"armorPenetration":20,
 	"burnTime":90,
 	"accelerationTime":45,
 	"accelerationDelay":10,
@@ -53,8 +53,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":1.0,
-			"clampMax":80.0
+			"clampMin":1,
+			"clampMax":80
 			}
 			]
 		},
@@ -65,8 +65,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":1.0,
-			"clampMax":80.0
+			"clampMin":1,
+			"clampMax":80
 			}
 			]
 		}
@@ -82,8 +82,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":1.0,
-			"clampMax":80.0
+			"clampMin":1,
+			"clampMax":80
 			}
 			]
 		},
@@ -96,8 +96,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":1.0,
-			"clampMax":80.0
+			"clampMin":1,
+			"clampMax":80
 			}
 			]
 		}
@@ -111,17 +111,17 @@
 		"duration":80,
 		"transparency":0.7,
 		"scale":10.1,
-		"toScale":20.0,
+		"toScale":20,
 		"texture":"acmebase:textures/generic/exhaust.png",
-		"pos":[0.0,0.0,-8.13707],
-		"initialVelocity":[0.0,0.1,-0.5],
+		"pos":[0,0,-8.13707],
+		"initialVelocity":[0,0.1,-0.5],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":1.0,
-			"clampMax":80.0
+			"clampMin":1,
+			"clampMax":80
 			}
 			]
 		},
@@ -138,21 +138,21 @@
 		"textureDelays":[2,2,2,2,2],
 		"quantity":1,
 		"duration":10,
-		"scale":140.0,
-		"toScale":10.0,
-		"transparency":1.0,
+		"scale":140,
+		"toScale":10,
+		"transparency":1,
 		"isBright": true,
-		"pos":[0.0,1.3,0.0],
-		"initialVelocity":[0.0,1.0,0.0],
-		"movementVelocity":[0.0,-0.1,0.0],
-		"terminalVelocity":[0.0,0.0,0.0],
+		"pos":[0,1.3,0],
+		"initialVelocity":[0,1,0],
+		"movementVelocity":[0,-0.1,0],
+		"terminalVelocity":[0,0,0],
 		"activeAnimations":
 			[
 			{
 			"animationType": "visibility",
 			"variable": "bullet_hit",
-			"clampMin": 1.0,
-			"clampMax": 1.0
+			"clampMin": 1,
+			"clampMax": 1
 			}
 			]
 		},
@@ -161,42 +161,42 @@
 		"texture":"acmebase:textures/generic/exhaust.png",
 		"quantity":1,
 		"duration":100,
-		"scale":75.0,
-		"toScale":150.0,
+		"scale":75,
+		"toScale":150,
 		"transparency":0.95,
 		"toTransparency":0.001,
 		"color":"423D37",
-		"pos":[0.0,1.5,0.0],
-		"initialVelocity":[0.0,1.0,0.0],
-		"movementVelocity":[0.0,-0.1,0.0],
-		"terminalVelocity":[0.0,0.0,0.0],
+		"pos":[0,1.5,0],
+		"initialVelocity":[0,1,0],
+		"movementVelocity":[0,-0.1,0],
+		"terminalVelocity":[0,0,0],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"bullet_hit",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			]
 		},
 		{
 		"type":"generic",
 		"quantity":1,
-		"scale":25.0,
-		"toScale":170.0,
+		"scale":25,
+		"toScale":170,
 		"duration":5,
 		"color":"e0e0e0",
-		"pos":[0.0,1.0,0.0],
-		"initialVelocity":[0.0,1.5,0.0],
+		"pos":[0,1,0],
+		"initialVelocity":[0,1.5,0],
 		"texture":"acmebase:textures/generic/shockwave.png",
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"bullet_hit",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			]
 		}
@@ -210,8 +210,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"bullet_burntime",
-			"clampMin":80.0,
-			"clampMax":80.0
+			"clampMin":80,
+			"clampMax":80
 			}
 			],
 		"forceSound":true

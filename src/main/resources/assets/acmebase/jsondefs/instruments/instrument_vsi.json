@@ -1,0 +1,44 @@
+{
+	"general":
+		{
+		"name":"Vertical Speed Indicator",
+		"materials":
+			[
+			"minecraft:glass_pane:1",
+			"minecraft:redstone:2",
+			"oredict:ingotIron:2"
+			]
+		},
+	"textureName":"instrumentpage2.png",
+	"components":
+		[
+		{
+		"scale":1,
+		"textureXCenter":64,
+		"textureYCenter":320,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1,
+		"yCenter":-25,
+		"textureXCenter":265,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"rotation",
+			"variable":"vertical_speed",
+			"centerPoint":[0,25,0],
+			"axis":[0,0,2.125],
+			"offset":-90
+			}
+			]
+		}
+		]
+}

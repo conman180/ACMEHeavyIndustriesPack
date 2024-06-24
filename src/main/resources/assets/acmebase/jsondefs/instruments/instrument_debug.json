@@ -25,12 +25,12 @@
 		"scale": 1.0,
 		"textObject": 
 			{
-			"pos": [42.0,24.0,0.0],
+			"pos": [35.0,24.0,0.0],
 			"rot": [0.0,0.0,0.0],
-			"scale": 3.75,
-			"variableName": "lift_reserve",
-			"variableFactor": 1.0,
-			"variableFormat": "%04.0f",
+			"scale": 2.5,
+			"variableName": "thrust",
+			"variableFactor":0.4,
+			"variableFormat": "%02.2f",
 			"defaultText": "",
 			"color": "FFFFFF",
 			"lightsUp": true,

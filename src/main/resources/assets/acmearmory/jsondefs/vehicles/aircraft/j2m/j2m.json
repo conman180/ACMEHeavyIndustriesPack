@@ -27,7 +27,7 @@
 	"hasNavLights":true,
 	"hasStrobeLights":true,
 	"emptyMass":3210,
-	"fuelCapacity":7000,
+	"fuelCapacity":8250,
 	"gearSequenceDuration":60,
 	"brakingFactor":1.25,
 	"flapSpeed":0.6,
@@ -78,7 +78,7 @@
 	},
 	//Engine
 	{
-	"pos":[0.0,-0.03125,3.625],
+	"pos":[0.0,-0.03125,3.125],
 	"partScale":[0.85,0.85,1.0],
 	"minValue":0.45,
 	"maxValue":0.45,
@@ -91,10 +91,7 @@
 	"dismountPos":[1.0,0.5,0.0],
 	"isController":true,
 	"canDisableGun":true,
-	"types":["seat","seat_pilot"],
-	"interactableVariables":[
-		["canopy"]
-		]
+	"types":["seat","seat_pilot"]
 	},
 	//Guns
 	{
@@ -710,10 +707,6 @@
 		}
 		]
 	}
-	],
-"initialVariables":
-	[
-	"canopy"
 	],
 "definitions":
 	[
@@ -1548,207 +1541,113 @@
 		//parts falling off on death
 		{
 		"type":"generic",
-		"stopsOnGround":true,
 		"spawningOrientation":"entity",
 		"renderingOrientation":"fixed",
-		"quantity":1,
-		"duration":400,
-		"transparency":1.0,
-		"scale":1.0,
-		"hitboxSize":0.5,
-		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
-		"model":"acmearmory:objmodels/vehicles/aircraft/j2m/j2mwing_l.obj",
-		"pos":[0.75,-0.75,0.0],
-		"rot":[0.0,0.0,0.0],
-		"rotationRandomness":[70.0,40.0,20.0],
-		"rotationVelocity":[10.0,5.0,5.0],
-		"spreadRandomness":[0.0,0.0,0.0],
-		"movementVelocity":[0.00,-0.04,0.04],
-		"terminalVelocity":[5700.0,6000.0,6200.0],
-		"spawningAnimations": 
-			[
-			{
-			"animationType": "rotation",
-			"variable": "pitch",
-			"centerPoint": [0.75,-0.75,0.0],
-			"axis": [1.0,0.0,0.0]
-			},
-			{
-			"animationType": "rotation",
-			"variable": "yaw",
-			"centerPoint": [0.75,-0.75,0.0],
-			"axis": [0.0,1.0,0.0]
-			},
-			{
-			"animationType": "rotation",
-			"variable": "roll",
-			"centerPoint": [0.75,-0.75,0.0],
-			"axis": [0.0,0.0,1.0]
-			}
-			],
-		"activeAnimations":
-			[
-			{
-			"animationType": "visibility",
-			"variable": "!damage_totaled"
-			}
-			],
-        "subParticles":
-			[
-			{
-			"particle":
-				{
-				"type":"generic",
-				"spawnEveryTick":true,
-				"spawningOrientation":"world",
-				"renderingOrientation":"player",
-				"quantity":1,
-				"duration":44,
-				"transparency":0.2,
-				"toTransparency":1.0E-4,
-				"scale":10.0,
-				"toScale":30.0,
-				"hitboxSize":0.2,
-				"textureList":
-					[
-					"mts:textures/particles/big_smoke_0.png",
-					"mts:textures/particles/big_smoke_1.png",
-					"mts:textures/particles/big_smoke_2.png",
-					"mts:textures/particles/big_smoke_3.png",
-					"mts:textures/particles/big_smoke_4.png",
-					"mts:textures/particles/big_smoke_5.png",
-					"mts:textures/particles/big_smoke_6.png",
-					"mts:textures/particles/big_smoke_7.png",
-					"mts:textures/particles/big_smoke_8.png",
-					"mts:textures/particles/big_smoke_9.png",
-					"mts:textures/particles/big_smoke_10.png",
-					"mts:textures/particles/big_smoke_11.png"
-					],
-				"textureDelays":[4,4,4,4,4,4,4,4,4,4,4],
-				"randomTexture":true,
-				"color":"4E4C49",
-				"pos":[0.0,0.0,0.0],
-				"spreadRandomness":[0.001,0.001,0.001],
-				"initialVelocity":[0.0,0.0,0.2],
-				"movementVelocity":[0.0,0.0,0.0],
-				"terminalVelocity":[5700.0,6000.0,6200.0],
-				"activeAnimations":[]
-				},
-			"time":80
-			}
-			]
-		},
-		{
-		"type":"generic",
-		"stopsOnGround":true,
-		"spawningOrientation":"entity",
-		"renderingOrientation":"fixed",
-		"quantity":1,
-		"duration":400,
-		"transparency":1.0,
-		"scale":1.0,
-		"hitboxSize":0.5,
-		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
-		"model":"acmearmory:objmodels/vehicles/aircraft/j2m/j2mwing_r.obj",
-		"pos":[-0.75,-0.75,0.0],
-		"rot":[0.0,0.0,0.0],
-		"rotationRandomness":[70.0,40.0,20.0],
-		"rotationVelocity":[10.0,5.0,5.0],
-		"spreadRandomness":[0.0,0.0,0.0],
-		"movementVelocity":[0.0,-0.04,0.04],
-		"terminalVelocity":[5700.0,6000.0,6200.0],
-		"spawningAnimations": 
-			[
-			{
-			"animationType": "rotation",
-			"variable": "pitch",
-			"centerPoint": [-0.75,-0.75,0.0],
-			"axis": [1.0,0.0,0.0]
-			},
-			{
-			"animationType": "rotation",
-			"variable": "yaw",
-			"centerPoint": [-0.75,-0.75,0.0],
-			"axis": [0.0,1.0,0.0]
-			},
-			{
-			"animationType": "rotation",
-			"variable": "roll",
-			"centerPoint": [-0.75,-0.75,0.0],
-			"axis": [0.0,0.0,1.0]
-			}
-			],
-		"activeAnimations":
-			[
-			{
-			"animationType": "visibility",
-			"variable": "!damage_totaled"
-			}
-			],
-        "subParticles":
-			[
-			{
-			"particle":
-				{
-				"type":"generic",
-				"spawnEveryTick":true,
-				"spawningOrientation":"world",
-				"renderingOrientation":"player",
-				"quantity":1,
-				"duration":44,
-				"transparency":0.2,
-				"toTransparency":1.0E-4,
-				"scale":10.0,
-				"toScale":30.0,
-				"hitboxSize":0.2,
-				"textureList":
-					[
-					"mts:textures/particles/big_smoke_0.png",
-					"mts:textures/particles/big_smoke_1.png",
-					"mts:textures/particles/big_smoke_2.png",
-					"mts:textures/particles/big_smoke_3.png",
-					"mts:textures/particles/big_smoke_4.png",
-					"mts:textures/particles/big_smoke_5.png",
-					"mts:textures/particles/big_smoke_6.png",
-					"mts:textures/particles/big_smoke_7.png",
-					"mts:textures/particles/big_smoke_8.png",
-					"mts:textures/particles/big_smoke_9.png",
-					"mts:textures/particles/big_smoke_10.png",
-					"mts:textures/particles/big_smoke_11.png"
-					],
-				"textureDelays":[4,4,4,4,4,4,4,4,4,4,4],
-				"randomTexture":true,
-				"color":"4E4C49",
-				"pos":[0.0,0.0,0.0],
-				"spreadRandomness":[0.001,0.001,0.001],
-				"initialVelocity":[0.0,0.0,0.2],
-				"movementVelocity":[0.0,0.0,0.0],
-				"terminalVelocity":[5700.0,6000.0,6200.0],
-				"activeAnimations":[]
-				},
-			"time":80
-			}
-			]
-		},
-		{
-		"type":"generic",
-		"stopsOnGround":true,
-		"spawningOrientation":"entity",
-		"renderingOrientation":"fixed",
-		"quantity":1,
-		"duration":400,
-		"transparency":1.0,
-		"scale":1.0,
-		"hitboxSize":0.5,
-		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
 		"model":"acmearmory:objmodels/vehicles/aircraft/j2m/j2mtail.obj",
+		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
+		"quantity":1,
+		"duration":400,
+		"scale":1.0,
+		"hitboxSize":0.5,
 		"pos":[0.0,0.0,-5.0625],
-		"rot":[0.0,0.0,0.0],
-		"rotationRandomness":[70.0,40.0,20.0],
+		"movementVelocity":[0.0,-0.04,0.0],
+		"relativeMovementVelocity":[0.0,0.0,0.0],
+		"relativeInheritedVelocityFactor":[1.0,1.0,1.0],
+		"rotationRandomness":[10.0,10.0,10.0],
 		"rotationVelocity":[10.0,5.0,5.0],
-		"spreadRandomness":[0.0,0.0,0.0],
-		"movementVelocity":[0.0,-0.04,0.04],
-		"terminalVelocity":[5700.0,6000.0,6200.0],
+		"terminalVelocity":[100.0,100.0,100.0],
+		"spawningAnimations": 
+			[
+			{
+			"animationType": "rotation",
+			"variable": "pitch",
+			"centerPoint": [0.0,0.0,-5.0625],
+			"axis": [1.0,0.0,0.0]
+			},
+			{
+			"animationType": "rotation",
+			"variable": "yaw",
+			"centerPoint": [0.0,0.0,-5.0625],
+			"axis": [0.0,1.0,0.0]
+			},
+			{
+			"animationType": "rotation",
+			"variable": "roll",
+			"centerPoint": [0.0,0.0,-5.0625],
+			"axis": [0.0,0.0,1.0]
+			}
+			],
+		"activeAnimations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!damage_totaled"
+			}
+			]
+		},
+		{
+		"type":"generic",
+		"spawningOrientation":"entity",
+		"renderingOrientation":"fixed",
+		"model":"acmearmory:objmodels/vehicles/aircraft/j2m/j2mwing_l.obj",
+		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
+		"quantity":1,
+		"duration":400,
+		"scale":1.0,
+		"hitboxSize":0.5,
+		"pos":[0.75,-0.75,0.0],
+		"movementVelocity":[0.0,-0.04,0.0],
+		"relativeMovementVelocity":[0.0,0.0,0.0],
+		"relativeInheritedVelocityFactor":[1.0,1.0,0.9],
+		"rotationRandomness":[10.0,10.0,10.0],
+		"rotationVelocity":[10.0,5.0,5.0],
+		"terminalVelocity":[100.0,100.0,100.0],
+		"spawningAnimations": 
+			[
+			{
+			"animationType": "rotation",
+			"variable": "pitch",
+			"centerPoint": [0.75,-0.75,0.0],
+			"axis": [1.0,0.0,0.0]
+			},
+			{
+			"animationType": "rotation",
+			"variable": "yaw",
+			"centerPoint": [0.75,-0.75,0.0],
+			"axis": [0.0,1.0,0.0]
+			},
+			{
+			"animationType": "rotation",
+			"variable": "roll",
+			"centerPoint": [0.75,-0.75,0.0],
+			"axis": [0.0,0.0,1.0]
+			}
+			],
+		"activeAnimations":
+			[
+			{
+			"animationType": "visibility",
+			"variable": "!damage_totaled"
+			}
+			]
+		},
+		{
+		"type":"generic",
+		"spawningOrientation":"entity",
+		"renderingOrientation":"fixed",
+		"model":"acmearmory:objmodels/vehicles/aircraft/j2m/j2mwing_r.obj",
+		"texture":"acmearmory:textures/vehicles/aircraft/j2m/j2m.png",
+		"quantity":1,
+		"duration":400,
+		"scale":1.0,
+		"hitboxSize":0.5,
+		"pos":[-0.75,-0.75,0.0],
+		"movementVelocity":[0.0,-0.04,0.0],
+		"relativeMovementVelocity":[0.0,0.0,0.0],
+		"relativeInheritedVelocityFactor":[1.0,1.0,0.9],
+		"rotationRandomness":[10.0,10.0,10.0],
+		"rotationVelocity":[10.0,5.0,-5.0],
+		"terminalVelocity":[100.0,100.0,100.0],
 		"spawningAnimations": 
 			[
 			{
@@ -1775,50 +1674,6 @@
 			{
 			"animationType": "visibility",
 			"variable": "!damage_totaled"
-			}
-			],
-        "subParticles":
-			[
-			{
-			"particle":
-				{
-				"type":"generic",
-				"spawnEveryTick":true,
-				"spawningOrientation":"world",
-				"renderingOrientation":"player",
-				"quantity":1,
-				"duration":44,
-				"transparency":0.2,
-				"toTransparency":1.0E-4,
-				"scale":10.0,
-				"toScale":30.0,
-				"hitboxSize":0.2,
-				"textureList":
-					[
-					"mts:textures/particles/big_smoke_0.png",
-					"mts:textures/particles/big_smoke_1.png",
-					"mts:textures/particles/big_smoke_2.png",
-					"mts:textures/particles/big_smoke_3.png",
-					"mts:textures/particles/big_smoke_4.png",
-					"mts:textures/particles/big_smoke_5.png",
-					"mts:textures/particles/big_smoke_6.png",
-					"mts:textures/particles/big_smoke_7.png",
-					"mts:textures/particles/big_smoke_8.png",
-					"mts:textures/particles/big_smoke_9.png",
-					"mts:textures/particles/big_smoke_10.png",
-					"mts:textures/particles/big_smoke_11.png"
-					],
-				"textureDelays":[4,4,4,4,4,4,4,4,4,4,4],
-				"randomTexture":true,
-				"color":"4E4C49",
-				"pos":[0.0,0.0,0.0],
-				"spreadRandomness":[0.001,0.001,0.001],
-				"initialVelocity":[0.0,0.0,0.2],
-				"movementVelocity":[0.0,0.0,0.0],
-				"terminalVelocity":[5700.0,6000.0,6200.0],
-				"activeAnimations":[]
-				},
-			"time":80
 			}
 			]
 		}

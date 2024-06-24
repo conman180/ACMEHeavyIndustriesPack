@@ -35,18 +35,18 @@
 	"hasLandingLights":true,
 	"hasFlaps":true,
 	"emptyMass":10000,
-	"fuelCapacity":20000,
+	"fuelCapacity":115880,
 	"gearSequenceDuration":70,
-	"brakingFactor":1.0,
+	"brakingFactor":2,
 	"dragCoefficient":0.1,
-	"tailDistance":5.0,
+	"tailDistance":5,
 	"wingSpan":24.5,
-	"wingArea":25.0,
-	"aileronArea":3.0,
+	"wingArea":25,
+	"aileronArea":3,
 	"elevatorArea":3.6,
-	"rudderArea":1.0,
+	"rudderArea":1,
 	"flapSpeed":0.6,
-	"flapNotches":[0.0,15.0,30.0]
+	"flapNotches":[0,15,30]
 	},
 "parts":
 	[
@@ -116,40 +116,40 @@
 	//seats
 	{
 	"pos":[0.625,0.925,8.09375],
-	"dismountPos":[0.0,0.85,7.5],
+	"dismountPos":[0,0.85,7.5],
 	"isController":true,
 	"types":["seat","seat_pilot"]
 	},
 	{
 	"pos":[-0.625,0.925,8.09375],
-	"dismountPos":[0.0,0.85,7.5],
+	"dismountPos":[0,0.85,7.5],
 	"isController":true,
 	"types":["seat","seat_pilot"]
 	},
 	{
 	"pos":[-0.71875,0.85,3.75],
-	"rot":[0.0,180.0,0.0],
-	"dismountPos":[0.0,0.85,3.75],
+	"rot":[0,180,0],
+	"dismountPos":[0,0.85,3.75],
 	"isController":false,
 	"types":["seat","seat_pilot"]
 	},
 	{
-	"pos":[-0.71875,0.85,2.0],
-	"dismountPos":[0.0,0.85,2.0],
+	"pos":[-0.71875,0.85,2],
+	"dismountPos":[0,0.85,2],
 	"isController":false,
 	"types":["seat","seat_pilot"]
 	},
 	{
 	"pos":[0.59375,0.85,-0.0625],
-	"rot":[0.0,-90.0,0.0],
-	"dismountPos":[0.0,0.85,-0.0625],
+	"rot":[0,-90,0],
+	"dismountPos":[0,0.85,-0.0625],
 	"isController":false,
 	"types":["seat","seat_pilot"]
 	},
 	{
 	"pos":[0.59375,0.85,-1.5625],
-	"rot":[0.0,-90.0,0.0],
-	"dismountPos":[0.0,0.85,-1.5625],
+	"rot":[0,-90,0],
+	"dismountPos":[0,0.85,-1.5625],
 	"isController":false,
 	"types":["seat","seat_pilot"]
 	},
@@ -157,8 +157,8 @@
 	{
 	"pos":[2.4375,1.625,-3.1875],
 	"partScale":[2.5,2.5,1.75],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"minValue":1.06,
+	"maxValue":1.06,
 	"types":["engine_jet"],
 	"customTypes":["tf43"],
 	"interactableVariables":[
@@ -168,8 +168,8 @@
 	{
 	"pos":[-2.4375,1.625,-3.1875],
 	"partScale":[2.5,2.5,1.75],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"minValue":1.06,
+	"maxValue":1.06,
 	"types":["engine_jet"],
 	"customTypes":["tf43"],
 	"interactableVariables":[
@@ -322,12 +322,12 @@
 		"height":0.5
 		},
 		{
-		"pos":[4.25,0.375,-2.0],
+		"pos":[4.25,0.375,-2],
 		"width":1.125,
 		"height":0.25
 		},
 		{
-		"pos":[5.375,0.375,-2.0],
+		"pos":[5.375,0.375,-2],
 		"width":1.125,
 		"height":0.25
 		},
@@ -368,12 +368,12 @@
 		"height":0.5
 		},
 		{
-		"pos":[-4.25,0.375,-2.0],
+		"pos":[-4.25,0.375,-2],
 		"width":1.125,
 		"height":0.25
 		},
 		{
-		"pos":[-5.375,0.375,-2.0],
+		"pos":[-5.375,0.375,-2],
 		"width":1.125,
 		"height":0.25
 		},
@@ -409,27 +409,27 @@
 	"collisions":
 		[
 		{
-		"pos":[0.0,0.6875,12.6875],
+		"pos":[0,0.6875,12.6875],
 		"width":0.75,
 		"height":0.5
 		},
 		{
-		"pos":[0.0,0.75,11.8125],
-		"width":1.0,
-		"height":1.0
+		"pos":[0,0.75,11.8125],
+		"width":1,
+		"height":1
 		},
 		{
-		"pos":[0.0,0.625,10.375],
+		"pos":[0,0.625,10.375],
 		"width":1.875,
 		"height":1.25
 		},
 		{
-		"pos":[0.0,1.40625,10.0625],
+		"pos":[0,1.40625,10.0625],
 		"width":1.25,
 		"height":0.3125
 		},
 		{
-		"pos":[0.0,0.8125,9.0625],
+		"pos":[0,0.8125,9.0625],
 		"width":0.75,
 		"height":1.875
 		},
@@ -444,32 +444,32 @@
 		"height":1.8125
 		},
 		{
-		"pos":[0.0,0.15625,7.625],
+		"pos":[0,0.15625,7.625],
 		"width":2.125,
 		"height":0.6875
 		},
 		{
-		"pos":[0.0,0.15625,5.5],
+		"pos":[0,0.15625,5.5],
 		"width":2.125,
 		"height":0.6875
 		},
 		{
-		"pos":[0.0,0.09375,3.375],
+		"pos":[0,0.09375,3.375],
 		"width":2.125,
 		"height":0.8125
 		},
 		{
-		"pos":[0.0,0.09375,1.25],
+		"pos":[0,0.09375,1.25],
 		"width":2.125,
 		"height":0.8125
 		},
 		{
-		"pos":[0.0,0.09375,-0.875],
+		"pos":[0,0.09375,-0.875],
 		"width":2.125,
 		"height":0.8125
 		},
 		{
-		"pos":[0.0,0.125,-2.3125],
+		"pos":[0,0.125,-2.3125],
 		"width":0.75,
 		"height":0.75
 		},
@@ -479,37 +479,37 @@
 		"height":0.75
 		},
 		{
-		"pos":[0.0,1.375,-3.9375],
+		"pos":[0,1.375,-3.9375],
 		"width":2.5,
 		"height":2.375
 		},
 		{
-		"pos":[0.0,2.84375,-3.375],
+		"pos":[0,2.84375,-3.375],
 		"width":0.375,
 		"height":0.5625
 		},
 		{
-		"pos":[0.0,2.9375,-3.75],
+		"pos":[0,2.9375,-3.75],
 		"width":0.375,
 		"height":0.75
 		},
 		{
-		"pos":[0.0,3.125,-4.125],
+		"pos":[0,3.125,-4.125],
 		"width":0.375,
 		"height":1.125
 		},
 		{
-		"pos":[0.0,3.28125,-4.5],
+		"pos":[0,3.28125,-4.5],
 		"width":0.375,
 		"height":1.4375
 		},
 		{
-		"pos":[0.0,3.5,-4.875],
+		"pos":[0,3.5,-4.875],
 		"width":0.375,
 		"height":1.875
 		},
 		{
-		"pos":[0.0,3.75,-5.25],
+		"pos":[0,3.75,-5.25],
 		"width":0.375,
 		"height":2.375
 		},
@@ -534,27 +534,27 @@
 		"height":0.5625
 		},
 		{
-		"pos":[0.0,2.6875,7.0625],
+		"pos":[0,2.6875,7.0625],
 		"width":2.25,
 		"height":0.25
 		},
 		{
-		"pos":[0.0,2.6875,4.8125],
+		"pos":[0,2.6875,4.8125],
 		"width":2.25,
 		"height":0.25
 		},
 		{
-		"pos":[0.0,2.6875,2.5625],
+		"pos":[0,2.6875,2.5625],
 		"width":2.25,
 		"height":0.25
 		},
 		{
-		"pos":[0.0,2.6875,-0.3125],
+		"pos":[0,2.6875,-0.3125],
 		"width":2.25,
 		"height":0.25
 		},
 		{
-		"pos":[0.0,2.6875,-1.9375],
+		"pos":[0,2.6875,-1.9375],
 		"width":2.25,
 		"height":0.25
 		},
@@ -990,72 +990,72 @@
 	"collisions":
 		[
 		{
-		"pos":[0.0,4.03125,-5.625],
+		"pos":[0,4.03125,-5.625],
 		"width":0.375,
 		"height":2.9375
 		},
 		{
-		"pos":[0.0,4.25,-6.0],
+		"pos":[0,4.25,-6],
 		"width":0.375,
 		"height":3.375
 		},
 		{
-		"pos":[0.0,4.5,-6.375],
+		"pos":[0,4.5,-6.375],
 		"width":0.375,
 		"height":3.875
 		},
 		{
-		"pos":[0.0,4.71875,-6.75],
+		"pos":[0,4.71875,-6.75],
 		"width":0.375,
 		"height":4.3125
 		},
 		{
-		"pos":[0.0,4.9375,-7.125],
+		"pos":[0,4.9375,-7.125],
 		"width":0.375,
 		"height":4.75
 		},
 		{
-		"pos":[0.0,5.15625,-7.5],
+		"pos":[0,5.15625,-7.5],
 		"width":0.375,
 		"height":5.1875
 		},
 		{
-		"pos":[0.0,5.625,-7.875],
+		"pos":[0,5.625,-7.875],
 		"width":0.375,
 		"height":4.875
 		},
 		{
-		"pos":[0.0,6.15625,-8.25],
+		"pos":[0,6.15625,-8.25],
 		"width":0.375,
 		"height":3.8125
 		},
 		{
-		"pos":[0.0,6.625,-8.625],
+		"pos":[0,6.625,-8.625],
 		"width":0.375,
 		"height":2.875
 		},
 		{
-		"pos":[0.0,6.9375,-9.0],
+		"pos":[0,6.9375,-9],
 		"width":0.375,
 		"height":2.25
 		},
 		{
-		"pos":[0.0,7.09375,-9.375],
+		"pos":[0,7.09375,-9.375],
 		"width":0.375,
 		"height":1.5625
 		},
 		{
-		"pos":[0.0,7.25,-9.75],
+		"pos":[0,7.25,-9.75],
 		"width":0.375,
-		"height":1.0
+		"height":1
 		},
 		{
-		"pos":[1.0,6.875,-8.625],
+		"pos":[1,6.875,-8.625],
 		"width":1.625,
 		"height":0.5
 		},
 		{
-		"pos":[2.625,6.875,-9.0],
+		"pos":[2.625,6.875,-9],
 		"width":1.625,
 		"height":0.5
 		},
@@ -1070,12 +1070,12 @@
 		"height":0.5
 		},
 		{
-		"pos":[-1.0,6.875,-8.625],
+		"pos":[-1,6.875,-8.625],
 		"width":1.625,
 		"height":0.5
 		},
 		{
-		"pos":[-2.625,6.875,-9.0],
+		"pos":[-2.625,6.875,-9],
 		"width":1.625,
 		"height":0.5
 		},
@@ -1090,12 +1090,12 @@
 		"height":0.5
 		},
 		{
-		"pos":[0.0,1.90625,-7.625],
+		"pos":[0,1.90625,-7.625],
 		"width":1.375,
 		"height":1.3125
 		},
 		{
-		"pos":[0.0,1.625,-6.0625],
+		"pos":[0,1.625,-6.0625],
 		"width":1.75,
 		"height":1.875
 		}
@@ -1134,84 +1134,84 @@
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,0.75,5.6339],
+		"pos":[1,0.75,5.6339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.25,5.6339],
+		"pos":[1,1.25,5.6339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.75,5.6339],
+		"pos":[1,1.75,5.6339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,2.25,5.6339],
+		"pos":[1,2.25,5.6339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,0.75,5.3839],
+		"pos":[1,0.75,5.3839],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.25,5.3839],
+		"pos":[1,1.25,5.3839],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.75,5.3839],
+		"pos":[1,1.75,5.3839],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,2.25,5.3839],
+		"pos":[1,2.25,5.3839],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,0.75,5.1339],
+		"pos":[1,0.75,5.1339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.25,5.1339],
+		"pos":[1,1.25,5.1339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,1.75,5.1339],
+		"pos":[1,1.75,5.1339],
 		"width":0.5,
 		"height":0.5
 		},
 		{
 		"variableName":"hatch",
 		"variableType":"toggle",
-		"pos":[1.0,2.25,5.1339],
+		"pos":[1,2.25,5.1339],
 		"width":0.5,
 		"height":0.5
 		}
@@ -1222,7 +1222,7 @@
 		"animationType":"rotation",
 		"variable": "hatch",
 		"centerPoint":[1.0625,0.434892,5.375],
-		"axis": [0.0,0.0,-135.0],
+		"axis": [0,0,-135],
 		"duration":45
 		}
 		]
@@ -1279,7 +1279,7 @@
 		"animationType":"rotation",
 		"variable":"enginebay_l",
 		"centerPoint":[2.9375,2.125,-3.8125],
-		"axis":[0.0,0.0,65.0],
+		"axis":[0,0,65],
 		"duration":40
 		}
 		]
@@ -1315,7 +1315,7 @@
 			"animationType":"rotation",
 			"variable":"enginebay_r",
 			"centerPoint":[-2.9375,2.125,-3.8125],
-			"axis":[0.0,0.0,-65.0],
+			"axis":[0,0,-65],
 			"duration":40
 			}
 			]
@@ -1348,8 +1348,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"rudder",
-			"centerPoint":[0.0,4.65,-7.12215],
-			"axis":[0.0,0.5,0.0]
+			"centerPoint":[0,4.65,-7.12215],
+			"axis":[0,0.5,0]
 			}
 			]
 		},
@@ -1361,7 +1361,7 @@
 			"animationType":"rotation",
 			"variable":"elevator",
 			"centerPoint":[1.97889,6.87292,-8.77851],
-			"axis":[0.9962,0.0,-0.08715]
+			"axis":[0.9962,0,-0.08715]
 			}
 			]
 		},
@@ -1373,7 +1373,7 @@
 			"animationType":"rotation",
 			"variable":"elevator",
 			"centerPoint":[-1.97889,6.87292,-8.77851],
-			"axis":[0.9962,0.0,0.08715]
+			"axis":[0.9962,0,0.08715]
 			}
 			]
 		},
@@ -1433,7 +1433,7 @@
 			"animationType":"rotation",
 			"variable":"reverser",
 			"centerPoint":[2.4375,2.21875,-5.1875],
-			"axis":[-50.0,0.0,0.0],
+			"axis":[-50,0,0],
 			"duration":20
 			}
 			]
@@ -1446,7 +1446,7 @@
 			"animationType":"rotation",
 			"variable":"reverser",
 			"centerPoint":[2.4375,1.03125,-5.1875],
-			"axis":[50.0,0.0,0.0],
+			"axis":[50,0,0],
 			"duration":20
 			}
 			]
@@ -1459,7 +1459,7 @@
 			"animationType":"rotation",
 			"variable":"reverser",
 			"centerPoint":[-2.4375,2.21875,-5.1875],
-			"axis":[-50.0,0.0,0.0],
+			"axis":[-50,0,0],
 			"duration":20
 			}
 			]
@@ -1472,7 +1472,7 @@
 			"animationType":"rotation",
 			"variable":"reverser",
 			"centerPoint":[-2.4375,1.03125,-5.1875],
-			"axis":[50.0,0.0,0.0],
+			"axis":[50,0,0],
 			"duration":20
 			}
 			]
@@ -1486,7 +1486,7 @@
 			"animationType":"rotation",
 			"variable":"enginebay_l",
 			"centerPoint":[2.9375,2.125,-3.8125],
-			"axis":[0.0,0.0,65.0],
+			"axis":[0,0,65],
 			"duration":40
 			}
 			]
@@ -1499,7 +1499,7 @@
 			"animationType":"rotation",
 			"variable":"enginebay_r",
 			"centerPoint":[-2.9375,2.125,-3.8125],
-			"axis":[0.0,0.0,-65.0],
+			"axis":[0,0,-65],
 			"duration":40
 			}
 			]
@@ -1513,7 +1513,7 @@
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
 			"centerPoint":[1.6875,0.125,-0.1875],
-			"axis":[0.0,0.0,-85.0],
+			"axis":[0,0,-85],
 			"duration":60,
 			"forwardsDelay":11,
 			"reverseDelay":10
@@ -1528,7 +1528,7 @@
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
 			"centerPoint":[-1.6875,0.125,-0.1875],
-			"axis":[0.0,0.0,85.0],
+			"axis":[0,0,85],
 			"duration":60,
 			"forwardsDelay":11,
 			"reverseDelay":10
@@ -1543,7 +1543,7 @@
 			"animationType":"rotation",
 			"variable":"gear_moving",
 			"centerPoint":[0.0625,-0.3125,-0.1875],
-			"axis":[0.0,0.0,-90.0],
+			"axis":[0,0,-90],
 			"duration":10,
 			"forwardsDelay":0,
 			"reverseDelay":0
@@ -1558,7 +1558,7 @@
 			"animationType":"rotation",
 			"variable":"gear_moving",
 			"centerPoint":[-0.0625,-0.3125,-0.1875],
-			"axis":[0.0,0.0,90.0],
+			"axis":[0,0,90],
 			"duration":10,
 			"forwardsDelay":0,
 			"reverseDelay":0
@@ -1572,8 +1572,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[1.8125,0.0,-0.1875],
-			"axis":[0.0,0.0,-105.0],
+			"centerPoint":[1.8125,0,-0.1875],
+			"axis":[0,0,-105],
 			"duration":20,
 			"forwardsDelay":50,
 			"reverseDelay":0
@@ -1587,8 +1587,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[-1.8125,0.0,-0.1875],
-			"axis":[0.0,0.0,105.0],
+			"centerPoint":[-1.8125,0,-0.1875],
+			"axis":[0,0,105],
 			"duration":20,
 			"forwardsDelay":50,
 			"reverseDelay":0
@@ -1602,8 +1602,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[0.0,0.1875,6.8125],
-			"axis":[-90.0,0.0,0.0],
+			"centerPoint":[0,0.1875,6.8125],
+			"axis":[-90,0,0],
 			"duration":60,
 			"forwardsDelay":0,
 			"reverseDelay":10
@@ -1611,8 +1611,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"rudder",
-			"centerPoint":[0.0,0.1875,6.8125],
-			"axis":[0.0,1.0,0.0]
+			"centerPoint":[0,0.1875,6.8125],
+			"axis":[0,1,0]
 			}
 			]
 		},
@@ -1623,8 +1623,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[0.0,0.1875,6.8125],
-			"axis":[-90.0,0.0,0.0],
+			"centerPoint":[0,0.1875,6.8125],
+			"axis":[-90,0,0],
 			"duration":60,
 			"forwardsDelay":0,
 			"reverseDelay":10
@@ -1632,8 +1632,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"rudder",
-			"centerPoint":[0.0,0.1875,6.8125],
-			"axis":[0.0,1.0,0.0]
+			"centerPoint":[0,0.1875,6.8125],
+			"axis":[0,1,0]
 			}
 			]
 		},
@@ -1644,8 +1644,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[0.5,0.0,7.5],
-			"axis":[0.0,0.0,-110.0],
+			"centerPoint":[0.5,0,7.5],
+			"axis":[0,0,-110],
 			"duration":10,
 			"forwardsDelay":50,
 			"reverseDelay":0
@@ -1659,8 +1659,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"gear_setpoint",
-			"centerPoint":[-0.5,0.0,7.5],
-			"axis":[0.0,0.0,110.0],
+			"centerPoint":[-0.5,0,7.5],
+			"axis":[0,0,110],
 			"duration":10,
 			"forwardsDelay":50,
 			"reverseDelay":0
@@ -1676,12 +1676,12 @@
 			"animationType":"rotation",
 			"variable":"aileron",
 			"centerPoint":[1.1875,1.15625,8.9],
-			"axis":[0.0,0.0,0.6]
+			"axis":[0,0,0.6]
 			},
 			{
 			"animationType":"translation",
 			"variable":"elevator",
-			"axis":[0.0,0.0,-0.005]
+			"axis":[0,0,-0.005]
 			}
 			]
 		},
@@ -1693,12 +1693,12 @@
 			"animationType":"rotation",
 			"variable":"aileron",
 			"centerPoint":[-1.1875,1.15625,8.9],
-			"axis":[0.0,0.0,0.6]
+			"axis":[0,0,0.6]
 			},
 			{
 			"animationType":"translation",
 			"variable":"elevator",
-			"axis":[0.0,0.0,-0.005]
+			"axis":[0,0,-0.005]
 			}
 			]
 		},
@@ -1709,7 +1709,7 @@
 			{
 			"animationType":"translation",
 			"variable":"throttle",
-			"axis":[0.0,0.0,0.296875]
+			"axis":[0,0,0.296875]
 			}
 			]
 		},
@@ -1722,7 +1722,7 @@
 			"variable":"gear_setpoint",
 			"centerPoint":[1.1875,1.34375,8.6875],
 			"duration":10,
-			"axis":[60.0,0.0,0.0]
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1735,7 +1735,7 @@
 			"variable":"gear_setpoint",
 			"centerPoint":[-1.1875,1.34375,8.6875],
 			"duration":10,
-			"axis":[60.0,0.0,0.0]
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1746,8 +1746,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"reverser",
-			"centerPoint":[0.0,1.06533,8.34814],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.34814],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1758,8 +1758,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"engine_magneto_1",
-			"centerPoint":[0.0,1.06533,8.34814],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.34814],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1770,8 +1770,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"engine_magneto_2",
-			"centerPoint":[0.0,1.06533,8.34814],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.34814],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1782,8 +1782,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"navigation_light",
-			"centerPoint":[0.0,1.06533,8.46533],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.46533],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1794,8 +1794,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"landing_light",
-			"centerPoint":[0.0,1.06533,8.46533],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.46533],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1806,8 +1806,8 @@
 			{
 			"animationType":"rotation",
 			"variable":"strobe_light",
-			"centerPoint":[0.0,1.06533,8.46533],
-			"axis":[60.0,0.0,0.0]
+			"centerPoint":[0,1.06533,8.46533],
+			"axis":[60,0,0]
 			}
 			]
 		},
@@ -1818,7 +1818,7 @@
 			{
 			"animationType":"translation",
 			"variable":"engine_starter_1",
-			"axis":[0.0,-0.015625,0.0]
+			"axis":[0,-0.015625,0]
 			}
 			]
 		},
@@ -1829,7 +1829,7 @@
 			{
 			"animationType":"translation",
 			"variable":"engine_starter_2",
-			"axis":[0.0,-0.015625,0.0]
+			"axis":[0,-0.015625,0]
 			}
 			]
 		},
@@ -1842,7 +1842,7 @@
 			"animationType":"rotation",
 			"variable":"hatch",
 			"centerPoint":[1.0625,0.434892,5.375],
-			"axis":[0.0,0.0,-135.0],
+			"axis":[0,0,-135],
 			"duration":45
 			}
 			]
@@ -1863,50 +1863,50 @@
 			{
 			"animationType":"visibility",
 			"variable":"strobe_light",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			},
 			{
 			"animationType":"visibility",
 			"variable":"40_2_0_cycle",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			],
 		"blendableComponents":
 			[
 			//Leftface
 			{
-			"pos":[0.0,2.9375,-0.375],
-			"axis":[1.0,0.0,0.0],
+			"pos":[0,2.9375,-0.375],
+			"axis":[1,0,0],
 			"flareHeight":0.75,
 			"flareWidth":0.75
 			},
 			//RightFace
 			{
-			"pos":[0.0,2.9375,-0.375],
-			"axis":[-1.0,0.0,0.0],
+			"pos":[0,2.9375,-0.375],
+			"axis":[-1,0,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//FrontFace
 			{
-			"pos":[0.0,2.9375,-0.375],
-			"axis":[0.0,0.0,1.0],
+			"pos":[0,2.9375,-0.375],
+			"axis":[0,0,1],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//RearFace
 			{
-			"pos":[0.0,2.9375,-0.375],
-			"axis":[0.0,0.0,-1.0],
+			"pos":[0,2.9375,-0.375],
+			"axis":[0,0,-1],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//TopFace
 			{
-			"pos":[0.0,2.9375,-0.375],
-			"axis":[0.0,1.0,0.0],
+			"pos":[0,2.9375,-0.375],
+			"axis":[0,1,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			}
@@ -1923,8 +1923,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"navigation_light",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			],
 		"blendableComponents":
@@ -1932,35 +1932,35 @@
 			//Leftface
 			{
 			"pos":[12.125,0.5625,-2.0625],
-			"axis":[1.0,0.0,0.0],
+			"axis":[1,0,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//RightFace
 			{
 			"pos":[12.125,0.5625,-2.0625],
-			"axis":[-1.0,0.0,0.0],
+			"axis":[-1,0,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//FrontFace
 			{
 			"pos":[12.125,0.5625,-2.0625],
-			"axis":[0.0,0.0,1.0],
+			"axis":[0,0,1],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//BottomFace
 			{
 			"pos":[12.125,0.5625,-2.0625],
-			"axis":[0.0,-1.0,0.0],
+			"axis":[0,-1,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//TopFace
 			{
 			"pos":[12.125,0.5625,-2.0625],
-			"axis":[0.0,1.0,0.0],
+			"axis":[0,1,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			}
@@ -1977,8 +1977,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"navigation_light",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			],
 		"blendableComponents":
@@ -1986,35 +1986,35 @@
 			//Leftface
 			{
 			"pos":[-12.125,0.5625,-2.0625],
-			"axis":[1.0,0.0,0.0],
+			"axis":[1,0,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//RightFace
 			{
 			"pos":[-12.125,0.5625,-2.0625],
-			"axis":[-1.0,0.0,0.0],
+			"axis":[-1,0,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//FrontFace
 			{
 			"pos":[-12.125,0.5625,-2.0625],
-			"axis":[0.0,0.0,1.0],
+			"axis":[0,0,1],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//BottomFace
 			{
 			"pos":[-12.125,0.5625,-2.0625],
-			"axis":[0.0,-1.0,0.0],
+			"axis":[0,-1,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			},
 			//TopFace
 			{
 			"pos":[-12.125,0.5625,-2.0625],
-			"axis":[0.0,1.0,0.0],
+			"axis":[0,1,0],
 			"flareHeight":0.5,
 			"flareWidth":0.5
 			}
@@ -2031,8 +2031,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"landing_light",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			},
 			{
 			"animationType":"visibility",
@@ -2043,12 +2043,12 @@
 		"blendableComponents":
 			[
 			{
-			"pos":[0.0,-0.84375,7.0],
-			"axis":[0.0,-0.1,0.9],
+			"pos":[0,-0.84375,7],
+			"axis":[0,-0.1,0.9],
 			"flareHeight":0.5,
 			"flareWidth":0.5,
-			"beamLength":15.0,
-			"beamDiameter":10.0
+			"beamLength":15,
+			"beamDiameter":10
 			}
 			]
 		},
@@ -2111,8 +2111,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"2_4_0_cycle",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			]
 		},
@@ -2127,14 +2127,14 @@
 			{
 			"animationType":"visibility",
 			"variable":"fuel",
-			"clampMin":0.0,
+			"clampMin":0,
 			"clampMax":0.2
 			},
 			{
 			"animationType":"visibility",
 			"variable":"2_4_0_cycle",
-			"clampMin":1.0,
-			"clampMax":1.0
+			"clampMin":1,
+			"clampMax":1
 			}
 			]
 		},
@@ -2163,8 +2163,8 @@
 			{
 			"animationType":"visibility",
 			"variable":"2_4_0_cycle",
-			"clampMin":0.0,
-			"clampMax":1.0
+			"clampMin":0,
+			"clampMax":1
 			},
 			{
 			"animationType":"visibility",
@@ -2183,7 +2183,7 @@
 			{
 			"animationType":"visibility",
 			"variable":"lift_reserve",
-			"clampMax":-17.0
+			"clampMax":-17
 			}
 			]
 		}
@@ -2201,17 +2201,17 @@
 		"transparency":0.6,
 		"color":"191919",
 		"emissive":false,
-		"scale":4.0,
-		"toScale":10.0,
-		"pos":[0.75,0.48,-3.0],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"scale":4,
+		"toScale":10,
+		"pos":[0.75,0.48,-3],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":175.0,
-			"clampMax":270.0
+			"clampMin":175,
+			"clampMax":270
 			}
 			]
 		},
@@ -2223,17 +2223,17 @@
 		"transparency":0.4,
 		"color":"191919",
 		"emissive":false,
-		"scale":4.0,
-		"toScale":10.0,
+		"scale":4,
+		"toScale":10,
 		"pos":[-0.75,0.46875,-3.4],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":175.0,
-			"clampMax":270.0
+			"clampMin":175,
+			"clampMax":270
 			}
 			]
 		},
@@ -2246,17 +2246,17 @@
 		"transparency":0.7,
 		"color":"191919",
 		"emissive":false,
-		"scale":8.0,
-		"toScale":20.0,
-		"pos":[0.0,0.5,-2.5],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"scale":8,
+		"toScale":20,
+		"pos":[0,0.5,-2.5],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":216.0,
-			"clampMax":270.0
+			"clampMin":216,
+			"clampMax":270
 			}
 			]
 		},
@@ -2268,17 +2268,17 @@
 		"transparency":0.7,
 		"color":"191919",
 		"emissive":false,
-		"scale":8.0,
-		"toScale":20.0,
+		"scale":8,
+		"toScale":20,
 		"pos":[0.6875,0.42,-0.875],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":216.0,
-			"clampMax":270.0
+			"clampMin":216,
+			"clampMax":270
 			}
 			]
 		},
@@ -2291,17 +2291,17 @@
 		"transparency":0.7,
 		"color":"191919",
 		"emissive":false,
-		"scale":20.0,
-		"toScale":35.0,
-		"pos":[0.0,0.0,0.0],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"scale":20,
+		"toScale":35,
+		"pos":[0,0,0],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":256.0,
-			"clampMax":270.0
+			"clampMin":256,
+			"clampMax":270
 			}
 			]
 		},
@@ -2310,20 +2310,20 @@
 		"spawnEveryTick":true,
 		"quantity":1,
 		"duration":45,
-		"transparency":1.0,
+		"transparency":1,
 		"color":"FFFFFF",
 		"emissive":true,
-		"scale":10.0,
-		"toScale":15.0,
+		"scale":10,
+		"toScale":15,
 		"pos":[1.25,0.15,0.2825],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":256.0,
-			"clampMax":270.0
+			"clampMin":256,
+			"clampMax":270
 			}
 			]
 		},
@@ -2332,27 +2332,23 @@
 		"spawnEveryTick":true,
 		"quantity":1,
 		"duration":35,
-		"transparency":1.0,
+		"transparency":1,
 		"color":"FFFFFF",
 		"emissive":true,
-		"scale":10.0,
-		"toScale":45.0,
-		"pos":[0.0,0.5,0.5],
-		"initialVelocity":[0.0,0.1,-0.4],
+		"scale":10,
+		"toScale":45,
+		"pos":[0,0.5,0.5],
+		"initialVelocity":[0,0.1,-0.4],
 		"activeAnimations":
 			[
 			{
 			"animationType":"visibility",
 			"variable":"damage",
-			"clampMin":256.0,
-			"clampMax":270.0
+			"clampMin":256,
+			"clampMax":270
 			}
 			]
 		}
 		]
-	},
-	"prefixFolders":"",
-	"packID":"acmecivil",
-	"systemName":"pj180",
-	"classification":"vehicle"
+	}
 }

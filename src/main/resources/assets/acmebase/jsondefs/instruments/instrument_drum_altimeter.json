@@ -1,8 +1,8 @@
 {
 	"general":
 		{
-		"name":"Drum-TypeAltimeter",
-		"description":"Indicates altitude with a digital readout",
+		"name":"Drum-Type Altimeter",
+		"description":"Indicates altitude.",
 		"materials":
 			[
 			"minecraft:glass_pane:1",
@@ -10,33 +10,57 @@
 			"oredict:ingotIron:2"
 			]
 		},
-	"textureName":"instrumentpage1.png",
+	"textureName":"instrumentpage2.png",
 	"components":
 		[
 		{
-		"scale":1.0,
-		"textureXCenter":192,
+		"scale":1,
+		"textureXCenter":64,
 		"textureYCenter":192,
 		"textureWidth":128,
 		"textureHeight":128,
 		"lightUpTexture":true
 		},
 		{
-		"scale":1.0,
+		"scale":1,
+		"yCenter":-26,
+		"textureXCenter":259,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis":[0,0.5,0]
+			},
+			{
+			"animationType":"rotation",
+			"variable":"altitude",
+			"centerPoint":[-1,26,0],
+			"axis":[0,0,3.6]
+			}
+			]
+		},
+		{
+		"scale":1,
 		"textObject":
 			{
-			"pos":[52.0,24.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":3.75,
+			"pos":[-10,6,0],
+			"scale":1.65,
+			"maxLength":3,
 			"variableName":"altitude",
-			"variableFactor":1.0,
-			"variableFormat":"%04.0f",
+			"variableFactor":0.01,
+			"variableOffset":-0.5,
+			"variableFormat":"%01.0f",
 			"defaultText":"",
 			"color":"FFFFFF",
 			"lightsUp":true,
 			"renderPosition":2
 			},
-		"textFactor":1.0,
 		"lightUpTexture":true
 		}
 		]

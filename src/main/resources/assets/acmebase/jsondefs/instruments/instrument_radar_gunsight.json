@@ -14,7 +14,7 @@
 	"components":
 		[
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":192,
 		"textureYCenter":448,
 		"textureWidth":128,
@@ -22,7 +22,7 @@
 		"lightUpTexture":true
 		},
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":832,
 		"textureYCenter":832,
 		"textureWidth":18,
@@ -34,18 +34,18 @@
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			},
 			{
 			"animationType":"translation",
 			"variable":"gun_lockedon_leadangle_y_1",
-			"axis":[0.0,6.0,0.0]
+			"axis":[0,6,0]
 			},
 			{
 			"animationType":"translation",
 			"variable":"gun_lockedon_leadangle_x_1",
-			"axis":[-6.0,0.0,0.0]
+			"axis":[-6,0,0]
 			}
 			]
 		}

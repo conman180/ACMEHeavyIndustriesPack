@@ -34,10 +34,10 @@
 	"hasStrobeLights":true,
 	"hasLandingLights":true,
 	"hasFlaps":true,
-	"emptyMass":13000,
-	"fuelCapacity":20000,
+	"emptyMass":20185,
+	"fuelCapacity":106800,
 	"gearSequenceDuration":50,
-	"brakingFactor":1.0,
+	"brakingFactor":3.0,
 	"dragCoefficient":0.02,
 	"tailDistance":5.0,
 	"wingSpan":13.1,
@@ -80,9 +80,6 @@
 	"isController":true,
 	"canDisableGun":true,
 	"types":["seat_ejection"],
-	"interactableVariables":[
-		["canopy"]
-		],
 	"animations":
 		[
 		{
@@ -109,33 +106,58 @@
 	},
 	//Engines
 	{
-	"pos":[0.75,-0.32031,-3.5],
-	"partScale":[1.8,1.8,2.0],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"pos":[0.75,-0.3125,-4.625],
+	"partScale":[2,2,0.9],
+	"minValue":4.08,
+	"maxValue":4.08,
 	"types":["engine_jet"],
 	"customTypes":["tf100"]
 	},
 	{
-	"pos":[-0.75,-0.32031,-3.5],
-	"partScale":[1.8,1.8,2.0],
-	"minValue":1.0,
-	"maxValue":1.0,
+	"pos":[-0.75,-0.3125,-4.625],
+	"partScale":[2,2,0.9],
+	"minValue":4.08,
+	"maxValue":4.08,
 	"types":["engine_jet"],
 	"customTypes":["tf100"]
+	},
+	//Droptanks
+	{
+	"pos":[0.0,-1.125,0.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["interactable_barrel"],
+	"customTypes":["droptank_large"],
+	"transferVariable":"DROP_TANK"
+	},
+	{
+	"pos":[3.28125,-0.625,-0.5],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["interactable_barrel"],
+	"customTypes":["droptank_large"],
+	"transferVariable":"DROP_TANK"
+	},
+	{
+	"pos":[-3.28125,-0.625,-0.5],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["interactable_barrel"],
+	"customTypes":["droptank_large"],
+	"transferVariable":"DROP_TANK"
 	},
 	//Weapons
 	//Gun
 	{
 	"pos":[-1.8125,-0.0,3.375],
-	"rot":[0.0,0.0,180.0],
+	"rot":[-3.4,0.3,180.0],
 	"minValue":20.0,
 	"maxValue":20.0,
 	"partScale":[0.6,0.6,1.0],
 	"types":["gun_fixed"],
 	"customTypes":["gun_rotary_medium"]
 	},
-	//Hardpoints
+	//Hardpoint1
 	{
 	"pos":[3.5,-0.4375,0.5],
 	"rot":[0.0,0.0,90.0],
@@ -143,12 +165,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_air_light",
-		"missile_air_medium",
-		"missile_air_heavy"
+		["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_12"]
 		]
 	},
+	{
+	"pos":[3.5,-0.4375,0.499],
+	"rot":[0.0,0.0,90.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_11"]
+		]
+	},
+	//Hardpoint2
 	{
 	"pos":[-3.5,-0.4375,0.5],
 	"rot":[0.0,0.0,-90.0],
@@ -156,12 +190,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_air_light",
-		"missile_air_medium",
-		"missile_air_heavy"
+		["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_14"]
 		]
 	},
+	{
+	"pos":[-3.5,-0.4375,0.499],
+	"rot":[0.0,0.0,-90.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_13"]
+		]
+	},
+	//Hardpoint3
 	{
 	"pos":[3.0625,-0.4375,0.5],
 	"rot":[0.0,0.0,-90.0],
@@ -169,12 +215,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_air_light",
-		"missile_air_medium",
-		"missile_air_heavy"
+		["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_16"]
 		]
 	},
+	{
+	"pos":[3.0625,-0.4375,0.499],
+	"rot":[0.0,0.0,-90.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_15"]
+		]
+	},
+	//Hardpoint4
 	{
 	"pos":[-3.0625,-0.4375,0.5],
 	"rot":[0.0,0.0,90.0],
@@ -182,12 +240,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_air_light",
-		"missile_air_medium",
-		"missile_air_heavy"
+		["missile_air_light"],
+	"interactableVariables":[
+		["!part_present_18"]
 		]
 	},
+	{
+	"pos":[-3.0625,-0.4375,0.499],
+	"rot":[0.0,0.0,90.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_17"]
+		]
+	},
+	//Hardpoint5
 	{
 	"pos":[1.53125,-0.96875,2.25],
 	"rot":[0.0,0.0,45.0],
@@ -195,11 +265,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_vehicle_medium",
-		"missile_air_medium"
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_20"]
 		]
 	},
+	{
+	"pos":[1.53125,-0.96875,2.249],
+	"rot":[0.0,0.0,45.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium_sarh"],
+	"interactableVariables":[
+		["!part_present_19"]
+		]
+	},
+	//Hardpoint6
 	{
 	"pos":[-1.53125,-0.96875,2.25],
 	"rot":[0.0,0.0,-45.0],
@@ -207,11 +290,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_vehicle_medium",
-		"missile_air_medium"
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_22"]
 		]
 	},
+	{
+	"pos":[-1.53125,-0.96875,2.249],
+	"rot":[0.0,0.0,-45.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium_sarh"],
+	"interactableVariables":[
+		["!part_present_21"]
+		]
+	},
+	//Hardpoint7
 	{
 	"pos":[1.4375,-0.9375,-1.75],
 	"rot":[0.0,3.0,30.0],
@@ -219,11 +315,24 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_vehicle_medium",
-		"missile_air_medium"
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_24"]
 		]
 	},
+	{
+	"pos":[1.4375,-0.9375,-1.751],
+	"rot":[0.0,3.0,30.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium_sarh"],
+	"interactableVariables":[
+		["!part_present_23"]
+		]
+	},
+	//Hardpoint8
 	{
 	"pos":[-1.4375,-0.9375,-1.75],
 	"rot":[0.0,-3.0,-30.0],
@@ -231,9 +340,21 @@
 	"maxValue":1000.0,
 	"types":["gun_pylon_standard"],
 	"customTypes":
-		[
-		"missile_vehicle_medium",
-		"missile_air_medium"
+		["missile_air_medium"],
+	"interactableVariables":[
+		["!part_present_26"]
+		]
+	},
+	{
+	"pos":[-1.4375,-0.9375,-1.751],
+	"rot":[0.0,-3.0,-30.0],
+	"minValue":0.0,
+	"maxValue":1000.0,
+	"types":["gun_pylon_standard"],
+	"customTypes":
+		["missile_air_medium_sarh"],
+	"interactableVariables":[
+		["!part_present_25"]
 		]
 	}
 	],
@@ -256,17 +377,25 @@
 	"defaultInstrument":"acmebase:instrument_rwr",
 	"hudScale":0.55
 	},
+	{
+	"pos":[0.234375,0.3984375,7.97],
+	"scale":0.01175,
+	"hudX":1000,
+	"hudY":1000,
+	"defaultInstrument":"acmebase:instrument_f15_wcp",
+	"hudScale":0.25
+	},
 	//MFD TBD
 	//Center2
 	{
-	"pos":[0.025,0.60938,7.9843],
-	"scale":0.075,
+	"pos":[0.0,0.60938,7.9843],
+	"scale":0.0175,
 	"hudX":175,
 	"hudY":40,
 	"hudScale":0.4
 	},
 	{
-	"pos":[0.025,0.44532,7.9843],
+	"pos":[0.0,0.44532,7.9843],
 	"scale":0.0175,
 	"hudX":175,
 	"hudY":95,
@@ -303,20 +432,14 @@
 	},
 	//HUD
 	{
-	"pos":[0.0,1.065,7.75],
-	"scale":0.017,
+	"pos":[0.0,1.0625,8.0625],
+	"scale":0.02725,
 	"hudX":1000,
 	"hudY":1000,
 	"defaultInstrument":"acmebase:instrument_f15_hud",
 	"hudScale":0.325,
 	"animations":
 		[
-		{
-		"animationType":"visibility",
-		"variable":"!seat_occupied_1",
-		"clampMin":1.0,
-		"clampMax":1.0
-		},
 		{
 		"animationType":"inhibitor",
 		"variable":"!seat_occupied_1",
@@ -326,16 +449,16 @@
 		{
 		"animationType":"translation",
 		"variable":"seat_rider_yaw_1",
-		"axis": [0.00085,0.0,0.0],
-		"clampMin":-30.0,
-		"clampMax":30.0
+		"axis":[0.000875,0.0,0.0],
+		"clampMin":-0.0625,
+		"clampMax":0.0625
 		},
 		{
 		"animationType":"translation",
 		"variable":"seat_rider_pitch_1",
-		"axis": [0.0,-0.00085,0.0],
-		"clampMin":-30.0,
-		"clampMax":30.0
+		"axis":[0.0,-0.000875,0.0],
+		"clampMin":-0.0625,
+		"clampMax":0.0625
 		}
 		]
 	}
@@ -343,423 +466,1091 @@
 "variableModifiers":
 	[
 	{
-	"variable": "dragCoefficient",
+	"variable":"dragCoefficient",
 	"animations":
 		[
 		{
-		"animationType": "translation",
-		"variable": "brake",
-		"axis": [0.0,0.3,0.0]
+		"animationType":"translation",
+		"variable":"brake",
+		"axis":[0.0,0.3,0.0]
 		}
 		]
 	}
 	],
 "collisionGroups":
 	[
-	//MainBoxes
+	//body
 	{
 	"collisions":
 		[
 		{
-		"pos":[-0.85,-0.24,2.28],
-		"width":1.7,
-		"height":2.0
+		"pos":[0,-0.5,12.75],
+		"width":0.5,
+		"height":0.5
 		},
 		{
-		"pos":[-0.85,-0.24,0.58],
-		"width":1.7,
-		"height":2.0
+		"pos":[0,-0.40625,12.125],
+		"width":0.75,
+		"height":0.8125
 		},
 		{
-		"pos":[-0.85,-0.24,-1.12],
-		"width":1.7,
-		"height":2.0
+		"pos":[0,-0.34375,11.25],
+		"width":1,
+		"height":1.1875
 		},
 		{
-		"pos":[-0.85,-0.24,-2.82],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,-0.24,2.28],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,-0.24,0.58],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,-0.24,-1.12],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,-0.24,-2.82],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.85,-0.24,2.28],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.85,-0.24,0.58],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.85,-0.24,-1.12],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[0.85,-0.24,-2.82],
-		"width":1.7,
-		"height":2.0
-		},
-		{
-		"pos":[-0.0,-0.45,12.5],
-		"width":0.35,
-		"height":0.47
-		},
-		{
-		"pos":[0.0,-0.45,12.5],
-		"width":0.35,
-		"height":0.47
-		},
-		{
-		"pos":[0.0,0.05,5.675],
-		"width":1.4,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,0.05,4.75],
-		"width":1.4,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,0.05,3.825],
-		"width":1.4,
-		"height":2.0
-		},
-		{
-		"pos":[0.0,-0.57,7.14],
-		"width":1.5,
-		"height":0.75
-		},
-		{
-		"pos":[-0.6,0.24,8.04],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,7.79],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,7.54],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,7.29],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,7.04],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,6.79],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[-0.6,0.24,6.54],
-		"width":0.25,
-		"height":0.85
-		},
-		{
-		"pos":[0.0,-0.3,10.01],
+		"pos":[0,-0.28125,10.0625],
 		"width":1.25,
-		"height":1.36
+		"height":1.4375
 		},
 		{
-		"pos":[0.0,-0.35,11.13],
-		"width":1.0,
-		"height":1.09
+		"pos":[0,-0.21875,8.6875],
+		"width":1.375,
+		"height":1.5625
 		},
 		{
-		"pos":[0.0,-0.45,11.98],
-		"width":0.7,
-		"height":0.8
+		"pos":[0,0.8125,8.6875],
+		"width":1,
+		"height":0.5
 		},
 		{
-		"pos":[0.0,-0.57,8.64],
-		"width":1.5,
-		"height":0.75
+		"pos":[0,-0.5625,7.4375],
+		"width":1.125,
+		"height":0.875
 		},
 		{
-		"pos":[-3.45,0.05,-2.25],
-		"width":3.5,
-		"height":0.4
+		"pos":[0.625,-0.0625,7.8125],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,8.04],
-		"width":0.25,
-		"height":0.85
+		"pos":[0.625,-0.0625,7.4375],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,7.79],
-		"width":0.25,
-		"height":0.85
+		"pos":[0.625,-0.0625,7.0625],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,7.54],
-		"width":0.25,
-		"height":0.85
+		"pos":[-0.625,-0.0625,7.8125],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,7.29],
-		"width":0.25,
-		"height":0.85
+		"pos":[-0.625,-0.0625,7.4375],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,7.04],
-		"width":0.25,
-		"height":0.85
+		"pos":[-0.625,-0.0625,7.0625],
+		"width":0.375,
+		"height":1.25
 		},
 		{
-		"pos":[0.6,0.24,6.79],
-		"width":0.25,
-		"height":0.85
+		"pos":[0,-0.125,6.1875],
+		"width":1.375,
+		"height":1.75
 		},
 		{
-		"pos":[0.6,0.24,6.54],
-		"width":0.25,
-		"height":0.85
+		"pos":[0,-0.03125,4.8125],
+		"width":1.375,
+		"height":2.0625
 		},
 		{
-		"pos":[0.0,0.38,8.83],
+		"pos":[0,-0.125,3.4375],
+		"width":1.375,
+		"height":2
+		},
+		{
+		"pos":[0,-0.1875,2.125],
 		"width":1.25,
-		"height":1.15
+		"height":1.875
 		},
 		{
-		"pos":[-6.0,0.05,-2.13],
-		"width":1.6,
-		"height":0.4
-		},
-		{
-		"pos":[-6.0,0.05,-3.73],
-		"width":1.6,
-		"height":0.4
-		},
-		{
-		"pos":[-2.47,0.05,1.75],
-		"width":1.5,
-		"height":0.4
-		},
-		{
-		"pos":[-2.47,0.05,0.25],
-		"width":1.5,
-		"height":0.4
-		},
-		{
-		"pos":[6.0,0.05,-2.13],
-		"width":1.6,
-		"height":0.4
-		},
-		{
-		"pos":[6.0,0.05,-3.73],
-		"width":1.6,
-		"height":0.4
-		},
-		{
-		"pos":[-3.72,0.05,-0.0],
-		"width":1.0,
-		"height":0.4
-		},
-		{
-		"pos":[2.47,0.05,1.75],
-		"width":1.5,
-		"height":0.4
-		},
-		{
-		"pos":[2.47,0.05,0.25],
-		"width":1.5,
-		"height":0.4
-		},
-		{
-		"pos":[-0.75,-0.28,-4.295],
+		"pos":[0,-0.3125,0.875],
 		"width":1.25,
-		"height":1.55
+		"height":1.75
 		},
 		{
-		"pos":[-0.75,-0.28,-5.545],
+		"pos":[0,-0.3125,-0.375],
 		"width":1.25,
-		"height":1.55
+		"height":1.75
 		},
 		{
-		"pos":[3.72,0.05,-0.0],
-		"width":1.0,
-		"height":0.4
-		},
-		{
-		"pos":[3.45,0.05,-2.25],
-		"width":3.5,
-		"height":0.4
-		},
-		{
-		"pos":[-0.75,-0.28,-6.67],
-		"width":1.0,
-		"height":1.0
-		},
-		{
-		"pos":[0.75,-0.28,-4.295],
+		"pos":[0,-0.3125,-1.625],
 		"width":1.25,
-		"height":1.55
+		"height":1.75
 		},
 		{
-		"pos":[0.75,-0.28,-5.545],
+		"pos":[0,-0.3125,-2.875],
 		"width":1.25,
-		"height":1.55
+		"height":1.75
 		},
 		{
-		"pos":[-1.8,-0.28,-4.38],
-		"width":0.75,
-		"height":1.0
+		"pos":[0,-0.3125,-4.125],
+		"width":1.25,
+		"height":1.75
 		},
 		{
-		"pos":[-1.8,-0.28,-5.13],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.5625,0.25,6.5625],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[-1.8,-0.28,-5.88],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.5625,0.25,5.9375],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[-1.8,-0.28,-6.63],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.5625,0.25,5.3125],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[-1.8,-0.28,-7.38],
-		"width":0.75,
-		"height":1.0
+		"pos":[0.9375,0.25,6.5625],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[0.75,-0.28,-6.67],
-		"width":1.0,
-		"height":1.0
+		"pos":[0.9375,0.25,5.9375],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[-3.22,-0.45,-7.65],
-		"width":2.0,
-		"height":0.34
+		"pos":[0.9375,0.25,5.3125],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[-1.97,1.91,-6.57],
-		"width":0.4,
-		"height":3.35
+		"pos":[1.4375,0.0625,4.1875],
+		"width":1.625,
+		"height":0.625
 		},
 		{
-		"pos":[-1.97,1.91,-6.97],
-		"width":0.4,
-		"height":3.35
+		"pos":[1.25,-0.65625,4],
+		"width":1.25,
+		"height":0.8125
 		},
 		{
-		"pos":[-1.97,1.91,-7.37],
-		"width":0.4,
-		"height":3.35
+		"pos":[1.4375,-0.25,2.5625],
+		"width":1.625,
+		"height":1.25
 		},
 		{
-		"pos":[3.22,-0.45,-7.65],
-		"width":2.0,
-		"height":0.34
+		"pos":[1.4375,-0.25,0.9375],
+		"width":1.625,
+		"height":1.25
 		},
 		{
-		"pos":[1.8,-0.28,-4.38],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.4375,-0.25,-0.6875],
+		"width":1.625,
+		"height":1.25
 		},
 		{
-		"pos":[1.8,-0.28,-5.13],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.4375,-0.25,-2.3125],
+		"width":1.625,
+		"height":1.25
 		},
 		{
-		"pos":[1.8,-0.28,-5.88],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.4375,-0.25,-3.9375],
+		"width":1.625,
+		"height":1.25
 		},
 		{
-		"pos":[1.8,-0.28,-6.63],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.8125,-0.1875,-5.1875],
+		"width":0.875,
+		"height":0.875
 		},
 		{
-		"pos":[1.8,-0.28,-7.38],
-		"width":0.75,
-		"height":1.0
+		"pos":[1.8125,-0.1875,-6.0625],
+		"width":0.875,
+		"height":0.875
 		},
 		{
-		"pos":[-1.97,1.24,-5.37],
-		"width":0.4,
-		"height":2.02
+		"pos":[1.8125,-0.1875,-6.9375],
+		"width":0.875,
+		"height":0.875
 		},
 		{
-		"pos":[-1.97,1.24,-5.77],
-		"width":0.4,
-		"height":2.02
+		"pos":[1.875,-0.3125,-7.6875],
+		"width":0.625,
+		"height":0.625
 		},
 		{
-		"pos":[-1.97,1.24,-6.17],
-		"width":0.4,
-		"height":2.02
+		"pos":[2,-0.375,-8.1875],
+		"width":0.625,
+		"height":0.625
 		},
 		{
-		"pos":[1.97,1.91,-6.57],
-		"width":0.4,
-		"height":3.35
+		"pos":[-1.5625,0.25,6.5625],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[1.97,1.91,-6.97],
-		"width":0.4,
-		"height":3.35
+		"pos":[-1.5625,0.25,5.9375],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[1.97,1.91,-7.37],
-		"width":0.4,
-		"height":3.35
+		"pos":[-1.5625,0.25,5.3125],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[1.97,1.24,-5.37],
-		"width":0.4,
-		"height":2.02
+		"pos":[-0.9375,0.25,6.5625],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[1.97,1.24,-5.77],
-		"width":0.4,
-		"height":2.02
+		"pos":[-0.9375,0.25,5.9375],
+		"width":0.625,
+		"height":0.25
 		},
 		{
-		"pos":[1.97,1.24,-6.17],
-		"width":0.4,
-		"height":2.02
+		"pos":[-0.9375,0.25,5.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-1.4375,0.0625,4.1875],
+		"width":1.625,
+		"height":0.625
+		},
+		{
+		"pos":[-1.25,-0.65625,4],
+		"width":1.25,
+		"height":0.8125
+		},
+		{
+		"pos":[-1.4375,-0.25,2.5625],
+		"width":1.625,
+		"height":1.25
+		},
+		{
+		"pos":[-1.4375,-0.25,0.9375],
+		"width":1.625,
+		"height":1.25
+		},
+		{
+		"pos":[-1.4375,-0.25,-0.6875],
+		"width":1.625,
+		"height":1.25
+		},
+		{
+		"pos":[-1.4375,-0.25,-2.3125],
+		"width":1.625,
+		"height":1.25
+		},
+		{
+		"pos":[-1.4375,-0.25,-3.9375],
+		"width":1.625,
+		"height":1.25
+		},
+		{
+		"pos":[-1.8125,-0.1875,-5.1875],
+		"width":0.875,
+		"height":0.875
+		},
+		{
+		"pos":[-1.8125,-0.1875,-6.0625],
+		"width":0.875,
+		"height":0.875
+		},
+		{
+		"pos":[-1.8125,-0.1875,-6.9375],
+		"width":0.875,
+		"height":0.875
+		},
+		{
+		"pos":[-1.875,-0.3125,-7.6875],
+		"width":0.625,
+		"height":0.625
+		},
+		{
+		"pos":[-2,-0.375,-8.1875],
+		"width":0.625,
+		"height":0.625
+		}
+		]
+	},
+	//wingL
+	{
+	"collisions":
+		[
+		{
+		"pos":[2.5625,0,1.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,0.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[2.5625,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,0.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.1875,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[3.8125,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[4.4375,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.0625,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.0625,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.0625,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.0625,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.0625,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.6875,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.6875,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.6875,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.6875,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[5.6875,0,-4.125],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.3125,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.3125,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.3125,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.3125,0,-4.125],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.9375,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[6.9375,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		}
+		]
+	},
+	//wingR
+	{
+	"collisions":
+		[
+		{
+		"pos":[-2.5625,0,1.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,0.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-2.5625,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,0.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.1875,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,0.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-3.8125,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-0.375],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-4.4375,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.0625,0,-1],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.0625,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.0625,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.0625,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.0625,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.6875,0,-1.625],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.6875,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.6875,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.6875,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-5.6875,0,-4.125],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.3125,0,-2.25],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.3125,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.3125,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.3125,0,-4.125],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.9375,0,-2.875],
+		"width":0.625,
+		"height":0.375
+		},
+		{
+		"pos":[-6.9375,0,-3.5],
+		"width":0.625,
+		"height":0.375
+		}
+		]
+	},
+	//rudders
+	{
+	"collisions":
+		[
+		{
+		"pos":[2,0.6875,-4.90625],
+		"width":0.3125,
+		"height":0.875
+		},
+		{
+		"pos":[2,0.90625,-5.21875],
+		"width":0.3125,
+		"height":1.3125
+		},
+		{
+		"pos":[2,1.125,-5.53125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,1.125,-5.84375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,1.125,-6.12625],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,1.125,-6.46875],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,1.125,-6.78125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,1.125,-7.09375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,2.28125,-5.84375],
+		"width":0.3125,
+		"height":0.5625
+		},
+		{
+		"pos":[2,2.5625,-6.15625],
+		"width":0.3125,
+		"height":1.125
+		},
+		{
+		"pos":[2,2.875,-6.46875],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,2.875,-6.78125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,2.875,-7.09375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[2,2.875,-7.40625],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,0.6875,-4.90625],
+		"width":0.3125,
+		"height":0.875
+		},
+		{
+		"pos":[-2,0.90625,-5.21875],
+		"width":0.3125,
+		"height":1.3125
+		},
+		{
+		"pos":[-2,1.125,-5.53125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,1.125,-5.84375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,1.125,-6.12625],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,1.125,-6.46875],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,1.125,-6.78125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,1.125,-7.09375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,2.28125,-5.84375],
+		"width":0.3125,
+		"height":0.5625
+		},
+		{
+		"pos":[-2,2.5625,-6.15625],
+		"width":0.3125,
+		"height":1.125
+		},
+		{
+		"pos":[-2,2.875,-6.46875],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,2.875,-6.78125],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,2.875,-7.09375],
+		"width":0.3125,
+		"height":1.75
+		},
+		{
+		"pos":[-2,2.875,-7.40625],
+		"width":0.3125,
+		"height":1.75
+		}
+		]
+	},
+	//stabL
+	{
+	"applyAfter":"Stabilator_L",
+	"collisions":
+		[
+		{
+		"pos":[2.5625,-0.4375,-5.8125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[2.5625,-0.4375,-6.4375],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[2.5625,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[2.5625,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[2.5625,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.1875,-0.4375,-6.4375],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.1875,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.1875,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.1875,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.8125,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.8125,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[3.8125,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[4.4375,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[4.4375,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		}
+		]
+	},
+	//stabR
+	{
+	"applyAfter":"Stabilator_R",
+	"collisions":
+		[
+		{
+		"pos":[-2.5625,-0.4375,-5.8125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-2.5625,-0.4375,-6.4375],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-2.5625,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-2.5625,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-2.5625,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.1875,-0.4375,-6.4375],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.1875,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.1875,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.1875,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.8125,-0.4375,-7.0625],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.8125,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-3.8125,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-4.4375,-0.4375,-7.6875],
+		"width":0.625,
+		"height":0.25
+		},
+		{
+		"pos":[-4.4375,-0.4375,-8.3125],
+		"width":0.625,
+		"height":0.25
 		}
 		]
 	},
 	//Canopy
 	{
-	"isInterior": true,
+	"isInterior":true,
+	"applyAfter":"Canopy",
 	"collisions":
 		[
 		{
@@ -937,20 +1728,6 @@
 		"width":0.15,
 		"height":0.67
 		}
-		],
-	"animations":
-		[
-		{
-		"animationType":"rotation",
-		"variable": "canopy",
-		"centerPoint":[0.0,1.0928,4.8675],
-		"axis": [-35.0,0.0,0.0],
-		"duration":45
-		},
-		{
-		"animationType":"visibility",
-		"variable": "EJECT"
-		}
 		]
 	},
 	//EjectionReset
@@ -970,7 +1747,7 @@
 		[
 		{
 		"animationType":"visibility",
-		"variable": "!EJECT"
+		"variable":"!EJECT"
 		}
 		]
 	},
@@ -980,17 +1757,17 @@
 		[
 		{
 		"pos":[0.0,-1.75,5.6],
-		"width":0.5, 
+		"width":0.5,
 		"height":1.5
 		},
 		{
 		"pos":[1.2,-1.75,-0.4],
-		"width":0.3, 
+		"width":0.3,
 		"height":1.2
 		},
 		{
 		"pos":[-1.2,-1.75,-0.4],
-		"width":0.3, 
+		"width":0.3,
 		"height":1.2
 		}
 		],
@@ -998,19 +1775,19 @@
 		[
 		{
 		"animationType":"visibility",
-		"variable": "part_present_1"
+		"variable":"part_present_1"
 		},
 		{
 		"animationType":"visibility",
-		"variable": "part_present_2"
+		"variable":"part_present_2"
 		},
 		{
 		"animationType":"visibility",
-		"variable": "part_present_3"
+		"variable":"part_present_3"
 		},
 		{
 		"animationType":"visibility",
-		"variable": "gear_setpoint"
+		"variable":"gear_setpoint"
 		}
 		]
 	}
@@ -1019,43 +1796,43 @@
 	[
 	{
 	"subName":"",
-	"name":"FJ-51C Cormorant (Unpainted)",
+	"name":"FJ-51C Harpy (Unpainted)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_acme",
-	"name":"FJ-51C Cormorant (ACME Private Security Livery)",
+	"name":"FJ-51C Harpy (ACME Private Security Livery)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_cipher",
-	"name":"FJ-51C Cormorant (Galm 1 Livery)",
+	"name":"FJ-51C Harpy (Galm 1 Livery)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_darkgray",
-	"name":"FJ-51C Cormorant (Dark Gray Livery)",
+	"name":"FJ-51C Harpy (Dark Gray Livery)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_gray",
-	"name":"FJ-51C Cormorant (Standard Gray Livery)",
+	"name":"FJ-51C Harpy (Standard Gray Livery)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_pixy",
-	"name":"FJ-51C Cormorant (Galm 2 Livery)",
+	"name":"FJ-51C Harpy (Galm 2 Livery)",
 	"extraMaterials":
 		[]
 	},
 	{
 	"subName":"_splinter",
-	"name":"FJ-51C Cormorant (Splinter Livery)",
+	"name":"FJ-51C Harpy (Splinter Livery)",
 	"extraMaterials":
 		[]
 	}
@@ -2444,9 +3221,5 @@
 		"EJECT",
 		"DROP_TANK"
 		]
-	},
-	"prefixFolders":"",
-	"packID":"acmearmory",
-	"systemName":"f15c",
-	"classification":"vehicle"
+	}
 }

@@ -14,7 +14,7 @@
 	"components":
 		[
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":192,
 		"textureYCenter":448,
 		"textureWidth":128,
@@ -22,7 +22,7 @@
 		"lightUpTexture":true
 		},
 		{
-		"scale":1.0,
+		"scale":1,
 		"textureXCenter":832,
 		"textureYCenter":832,
 		"textureWidth":128,
@@ -33,16 +33,16 @@
 			{
 			"animationType":"translation",
 			"variable":"turn_indicator",
-			"axis":[-0.9,0.0,0.0],
-			"clampMin":-64.0,
+			"axis":[-0.9,0,0],
+			"clampMin":-64,
 			"clampMax":64.0
 			},
 			{
 			"animationType":"translation",
 			"variable":"pitch_indicator",
-			"axis":[0.0,0.9,0.0],
-			"clampMin":-64.0,
-			"clampMax":64.0
+			"axis":[0,0.9,0],
+			"clampMin":-64,
+			"clampMax":64
 			}
 			]
 		}
