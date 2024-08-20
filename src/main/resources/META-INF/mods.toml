@@ -13,7 +13,7 @@ license="All rights reserved"
 # The ID of your pack.
 modId="acmearmory"
 # Version number.  Can be whatever format you'd like.
-version="V2 Beta 7"
+version="V2 Beta 8"
  # Display name for the pack in the in-game mods list.
 displayName="ACME Heavy Industries Pack for Immersive Vehicles"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
@@ -29,7 +29,7 @@ A companion to the official pack; this centers mainly around military aviation f
 # The ID of your pack.
 modId="acmebase"
 # Version number.  Can be whatever format you'd like.
-version="V2 Beta 7"
+version="V2 Beta 8"
  # Display name for the pack in the in-game mods list.
 displayName="ACME Heavy Industries"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
@@ -45,7 +45,7 @@ A companion pack to the official pack for Immersive Vehicles.
 # The ID of your pack.
 modId="acmecivil"
 # Version number.  Can be whatever format you'd like.
-version="V2 Beta 7"
+version="V2 Beta 8"
  # Display name for the pack in the in-game mods list.
 displayName="ACME H.I. Civilian Sector"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
@@ -61,7 +61,7 @@ Civilian Sector of ACME Heavy Industries.
 # The ID of your pack.
 modId="acmetesting"
 # Version number.  Can be whatever format you'd like.
-version="V2 Beta 7"
+version="V2 Beta 8"
  # Display name for the pack in the in-game mods list.
 displayName="ACME H.I. Experimental Division"
 # A URL for the "homepage" for this pack, displayed in the mod UI.
