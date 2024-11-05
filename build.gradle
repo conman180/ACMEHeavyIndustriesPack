@@ -12,7 +12,7 @@ buildscript {
 apply plugin: "net.minecraftforge.gradle"
 
 //Set file name.
-version = "b2.7.0"
+version = "3.0.0b"
 group = "minecrafttransportsimulator"
 archivesBaseName = "ACME+HVY+IND-1.16.5"
 
