@@ -71,8 +71,8 @@
 	"pos":[0,0,-3.625],
 	"partScale":[2.3,2.3,1.8],
 	"types":["engine_jet"],
-	"minValue":2.81,
-	"maxValue":2.81,
+	"minValue":3.12,
+	"maxValue":3.12,
 	"customTypes":["tf404"]
 	},
 	//seat
