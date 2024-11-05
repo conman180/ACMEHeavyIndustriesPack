@@ -1,7 +1,6 @@
 {
     "pack": {
-        "description": "ACME Heavy Industries Pack",
-        "pack_format": 6,
-        "_comment": ""
+        "description": "ACME H.I. Resources",
+        "pack_format": 6
     }
 }
