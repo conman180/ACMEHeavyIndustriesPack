@@ -9,69 +9,49 @@ loaderVersion="[36,)"
 # Review your options at https://choosealicense.com/. All rights reserved is the default copyright stance, and is thus the default here.
 license="All rights reserved"
 
-[[mods]] 
-# The ID of your pack.
+[[mods]]
 modId="acmearmory"
-# Version number.  Can be whatever format you'd like.
-version="V2 Beta 8"
- # Display name for the pack in the in-game mods list.
-displayName="ACME Heavy Industries Pack for Immersive Vehicles"
-# A URL for the "homepage" for this pack, displayed in the mod UI.
+version="3.0.0b"
+displayName="ACME Armories"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
-# Pack logo.
-logoFile="vingette.png"
-# The description text for the pack (multi line!)
+logoFile="logo.png"
 description='''
-A companion to the official pack; this centers mainly around military aviation from all eras however is not limited solely to it.
+The military sector of ACME Heavy Industries
+Focuses mainly on military aviation
 '''
 
 [[mods]]
-# The ID of your pack.
 modId="acmebase"
-# Version number.  Can be whatever format you'd like.
-version="V2 Beta 8"
- # Display name for the pack in the in-game mods list.
+version="3.0.0b"
 displayName="ACME Heavy Industries"
-# A URL for the "homepage" for this pack, displayed in the mod UI.
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
-logoFile="vingette.png"
-# The description text for the pack (multi line!)
+logoFile="logo.png"
 description='''
-A companion pack to the official pack for Immersive Vehicles.
+The base module for ACME Heavy Industries
+Contains required base parts for the other modules
 '''
 
 [[mods]]
-# The ID of your pack.
 modId="acmecivil"
-# Version number.  Can be whatever format you'd like.
-version="V2 Beta 8"
- # Display name for the pack in the in-game mods list.
+version="3.0.0b"
 displayName="ACME H.I. Civilian Sector"
-# A URL for the "homepage" for this pack, displayed in the mod UI.
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
-# Pack logo.
-logoFile="vingette.png"
-# The description text for the pack (multi line!)
+logoFile="logo.png"
 description='''
-Civilian Sector of ACME Heavy Industries.
+Civilian Sector of ACME Heavy Industries
 '''
 
 [[mods]]
-# The ID of your pack.
 modId="acmetesting"
-# Version number.  Can be whatever format you'd like.
-version="V2 Beta 8"
- # Display name for the pack in the in-game mods list.
+version="3.0.0b"
 displayName="ACME H.I. Experimental Division"
-# A URL for the "homepage" for this pack, displayed in the mod UI.
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
-# Pack logo.
-logoFile="vingette.png"
-# The description text for the pack (multi line!)
+logoFile="logo.png"
 description='''
-Unfinished, or experimental features. Liable to change.
-Also used as an update buffer for major changes to existing vehicles.
+Unfinished, or experimental features. Liable to change
+Also used as an update buffer for major changes to existing vehicles
+This branch should only exist in beta versions
 '''
 
 [[dependencies.acmebase]]
@@ -80,4 +60,3 @@ Also used as an update buffer for major changes to existing vehicles.
     versionRange="[22.16.0,)"
     ordering="NONE"
     side="BOTH"
-
