@@ -1,0 +1,139 @@
+{
+"general":
+	{
+	"health":150,
+	"radarRange":0,
+	"radarWidth":0,
+	"materialLists":[
+		[
+		]
+	]
+	},
+"motorized":
+	{
+	"isAircraft":true,
+	"hasAutopilot":true,
+	"hasRadioNav":true,
+	"hasNavLights":true,
+	"hasStrobeLights":true,
+	"hasLandingLights":true,
+	"emptyMass":1800,
+	"fuelCapacity":10000,
+	"gearSequenceDuration":100,
+	"brakingFactor":2,
+	"flapSpeed":0.6,
+	"dragCoefficient":0.02,
+	"tailDistance":5.25,
+	"wingSpan":11.8,
+	"wingArea":18.2,
+	"aileronArea":2,
+	"elevatorArea":4,
+	"rudderArea":1.55,
+	"litVariable":"navigation_light",
+	"panel":"mts:default_plane",
+	"flapNotches":[0,15,30]
+	},
+"parts":
+	[
+	//LG
+	{
+	"pos":[0,-0.859375,3.5],
+	"turnsWithSteer":true,
+	"minValue":0.5,
+	"maxValue":0.5,
+	"types":["ground_wheel","ground_wheel_aircraft"],
+	"interactableVariables":[
+		["!gear_setpoint"]
+		]
+	},
+	{
+	"pos":[2.1875,-0.859375,-0.0625],
+	"minValue":0.5,
+	"maxValue":0.5,
+	"types":["ground_wheel","ground_wheel_aircraft"],
+	"interactableVariables":[
+		["!gear_setpoint"]
+		]
+	},
+	{
+	"pos":[-2.1875,-0.859375,-0.0625],
+	"minValue":0.5,
+	"maxValue":0.5,
+	"types":["ground_wheel","ground_wheel_aircraft"],
+	"interactableVariables":[
+		["!gear_setpoint"]
+		]
+	},
+	//engine
+	{
+	"pos":[0,2.03125,-1.6875],
+	"partScale":[1.625,1.55,0.2],
+	"types":["engine_jet"],
+	"minValue":0.56,
+	"maxValue":0.56,
+	"customTypes":["tf33"]
+	},
+	//seats
+	{
+	"pos":[0,0.25,2.4375],
+	"isController":true,
+	"canDisableGun":true,
+	"types":["seat","seat_pilot"]
+	}
+	],
+"variableModifiers":
+	[],
+"instruments":
+	[
+	{
+	"pos":[0.453125,0.953125,2.98435 ],
+	"scale":0.019,
+	"hudX":30,
+	"hudY":30,
+	"hudScale":0.325
+	}
+	],		
+"collisionGroups":
+	[
+	//tempBox
+	{
+	"collisions":
+		[
+		{
+		"pos":[0,0,0],
+		"width":1,
+		"height":1
+		}
+		]
+	}
+	],
+"initialVariables":
+	[
+	],
+"definitions":
+	[
+	{
+	"subName":"",
+	"name":"ACME Executive PJ-50",
+	"extraMaterials":
+		[]
+	}
+	],
+"rendering":
+	{
+	"animatedObjects":
+		[
+		
+		],
+	"lightObjects":
+		[
+		
+		],
+	"particles":
+		[
+		],
+	"customVariables":
+		[
+		]
+	}
+}

@@ -1,8 +1,8 @@
 {
 	"general":
 		{
-		"name":"Drum-Type Airspeed Indicator",
-		"description":"Indicates knots(scaled) and displays a numeric value rather than a rotating dial.",
+		"name":"Airspeed Indicator",
+		"description":"Indicates knots(scaled)",
 		"materials":
 			[
 			"minecraft:glass_pane:1",
@@ -16,7 +16,7 @@
 		[
 		{
 		"scale":1,
-		"textureXCenter":192,
+		"textureXCenter":64,
 		"textureYCenter":64,
 		"textureWidth":128,
 		"textureHeight":128,
@@ -24,21 +24,23 @@
 		},
 		{
 		"scale":1,
-		"textObject":
+		"yCenter":-25,
+		"textureXCenter":265,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
 			{
-			"pos":[52,24,0],
-			"rot":[0,0,0],
-			"scale":3.75,
-			"variableName":"speed_scaled",
-			"variableFactor":1.944,
-			"variableFormat":"%04.0f",
-			"defaultText":"",
-			"color":"FFFFFF",
-			"lightsUp":true,
-			"renderPosition":2
-			},
-		"textFactor":1,
-		"lightUpTexture":true
+			"animationType":"rotation",
+			"variable":"speed_scaled",
+			"centerPoint":[0,25,0],
+			"axis":[0,0,0.78732],
+			"clampMax":300
+			}
+			]
 		}
 		]
 }

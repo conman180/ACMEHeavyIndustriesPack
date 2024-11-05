@@ -6,23 +6,6 @@
 	"radarWidth":30,
 	"materialLists":[
 		[
-		"minecraft:iron_bars:24",
-		"oredict:ingotIron:16",
-		"minecraft:glass_pane:8",
-		"minecraft:redstone:24",
-		"minecraft:comparator:2",
-		"minecraft:repeater:2",
-		"minecraft:bucket:10",
-		"minecraft:glowstone_dust:10"
-		]
-	],
-	"repairMaterialLists":[
-		[
-		"minecraft:iron_bars:12",
-		"oredict:ingotIron:16",
-		"minecraft:glass_pane:8",
-		"minecraft:comparator:1",
-		"minecraft:repeater:1"
 		]
 	]
 	},
@@ -87,7 +70,7 @@
 	},
 	//Engine
 	{
-	"pos":[0,0.25,-3.0625],
+	"pos":[0,0.203125,-3.0625],
 	"partScale":[3.05,3.05,2],
 	"types":["engine_jet"],
 	"minValue":2.89,
@@ -743,11 +726,11 @@
 		},
 		{
 		"animationType":"visibility",
-		"variable": "part_present_3"
+		"variable":"part_present_3"
 		},
 		{
 		"animationType":"visibility",
-		"variable": "gear_setpoint"
+		"variable":"gear_setpoint"
 		}
 		]
 	},
@@ -1739,7 +1722,7 @@
 		[
 		{
 		"animationType":"visibility",
-		"variable": "!EJECT"
+		"variable":"!EJECT"
 		}
 		]
 	}
@@ -2892,25 +2875,25 @@
 		"rotationVelocity":[10,5,5],
 		"terminalVelocity":[100,100,100],
 		"stopsOnGround":true,
-		"spawningAnimations": 
+		"spawningAnimations":
 			[
 			{
-			"animationType": "rotation",
-			"variable": "pitch",
-			"centerPoint": [0,0.75,-1],
-			"axis": [1,0,0]
+			"animationType":"rotation",
+			"variable":"pitch",
+			"centerPoint":[0,0.75,-1],
+			"axis":[1,0,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "yaw",
-			"centerPoint": [0,0,-5.0625],
-			"axis": [0,1,0]
+			"animationType":"rotation",
+			"variable":"yaw",
+			"centerPoint":[0,0,-5.0625],
+			"axis":[0,1,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "roll",
-			"centerPoint": [0,0,-5.0625],
-			"axis": [0,0,1]
+			"animationType":"rotation",
+			"variable":"roll",
+			"centerPoint":[0,0,-5.0625],
+			"axis":[0,0,1]
 			}
 			],
 		"activeAnimations":
@@ -2939,25 +2922,25 @@
 		"rotationVelocity":[10,5,5],
 		"terminalVelocity":[100,100,100],
 		"stopsOnGround":true,
-		"spawningAnimations": 
+		"spawningAnimations":
 			[
 			{
-			"animationType": "rotation",
-			"variable": "pitch",
-			"centerPoint": [1.75,0,-0.75],
-			"axis": [1,0,0]
+			"animationType":"rotation",
+			"variable":"pitch",
+			"centerPoint":[1.75,0,-0.75],
+			"axis":[1,0,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "yaw",
-			"centerPoint": [1.75,0,-0.75],
-			"axis": [0,1,0]
+			"animationType":"rotation",
+			"variable":"yaw",
+			"centerPoint":[1.75,0,-0.75],
+			"axis":[0,1,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "roll",
-			"centerPoint": [1.75,0,-0.75],
-			"axis": [0,0,1]
+			"animationType":"rotation",
+			"variable":"roll",
+			"centerPoint":[1.75,0,-0.75],
+			"axis":[0,0,1]
 			}
 			],
 		"activeAnimations":
@@ -2970,7 +2953,7 @@
 		"subParticles":
 			[
 			{
-            "particle":
+			"particle":
 				{
 				"type":"generic",
 				"spawnEveryTick":true,
@@ -3031,25 +3014,25 @@
 		"rotationVelocity":[10,5,5],
 		"terminalVelocity":[100,100,100],
 		"stopsOnGround":true,
-		"spawningAnimations": 
+		"spawningAnimations":
 			[
 			{
-			"animationType": "rotation",
-			"variable": "pitch",
-			"centerPoint": [-1.75,0,-0.75],
-			"axis": [1,0,0]
+			"animationType":"rotation",
+			"variable":"pitch",
+			"centerPoint":[-1.75,0,-0.75],
+			"axis":[1,0,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "yaw",
-			"centerPoint": [-1.75,0,-0.75],
-			"axis": [0,1,0]
+			"animationType":"rotation",
+			"variable":"yaw",
+			"centerPoint":[-1.75,0,-0.75],
+			"axis":[0,1,0]
 			},
 			{
-			"animationType": "rotation",
-			"variable": "roll",
-			"centerPoint": [-1.75,0,-0.75],
-			"axis": [0,0,1]
+			"animationType":"rotation",
+			"variable":"roll",
+			"centerPoint":[-1.75,0,-0.75],
+			"axis":[0,0,1]
 			}
 			],
 		"activeAnimations":
@@ -3062,7 +3045,7 @@
 		"subParticles":
 			[
 			{
-            "particle":
+			"particle":
 				{
 				"type":"generic",
 				"spawnEveryTick":true,
@@ -3300,14 +3283,14 @@
 		"activeAnimations":
 			[
 			{
-			"animationType": "visibility",
-			"variable": "!engine_running_1"
+			"animationType":"visibility",
+			"variable":"!engine_running_1"
 			},
 			{
-			"animationType": "visibility",
-			"variable": "altitude",
+			"animationType":"visibility",
+			"variable":"altitude",
 			"clampMin":200,
-			"clampMax": 10000
+			"clampMax":10000
 			}
 			]
 		},
@@ -3349,16 +3332,16 @@
 		"activeAnimations":
 			[
 			{
-			"animationType": "visibility",
-			"variable": "speed_scaled",
+			"animationType":"visibility",
+			"variable":"speed_scaled",
 			"clampMin":98,
-			"clampMax": 999
+			"clampMax":999
 			},
 			{
-			"animationType": "visibility",
-			"variable": "lift_reserve",
+			"animationType":"visibility",
+			"variable":"lift_reserve",
 			"clampMin":-25,
-			"clampMax": -5
+			"clampMax":-5
 			}
 			]
 		},
@@ -3399,16 +3382,16 @@
 		"activeAnimations":
 			[
 			{
-			"animationType": "visibility",
-			"variable": "speed_scaled",
+			"animationType":"visibility",
+			"variable":"speed_scaled",
 			"clampMin":98,
-			"clampMax": 999
+			"clampMax":999
 			},
 			{
-			"animationType": "visibility",
-			"variable": "lift_reserve",
+			"animationType":"visibility",
+			"variable":"lift_reserve",
 			"clampMin":-25,
-			"clampMax": -5
+			"clampMax":-5
 			}
 			]
 		},
@@ -3447,16 +3430,16 @@
 		"activeAnimations":
 			[
 			{
-			"animationType": "visibility",
-			"variable": "speed_scaled",
+			"animationType":"visibility",
+			"variable":"speed_scaled",
 			"clampMin":72,
-			"clampMax": 999
+			"clampMax":999
 			},
 			{
-			"animationType": "visibility",
-			"variable": "lift_reserve",
+			"animationType":"visibility",
+			"variable":"lift_reserve",
 			"clampMin":-20,
-			"clampMax": -3
+			"clampMax":-3
 			}
 			]
 		},
@@ -3494,16 +3477,16 @@
 		"activeAnimations":
 			[
 			{
-			"animationType": "visibility",
-			"variable": "speed_scaled",
+			"animationType":"visibility",
+			"variable":"speed_scaled",
 			"clampMin":72,
-			"clampMax": 999
+			"clampMax":999
 			},
 			{
-			"animationType": "visibility",
-			"variable": "lift_reserve",
+			"animationType":"visibility",
+			"variable":"lift_reserve",
 			"clampMin":-20,
-			"clampMax": -3
+			"clampMax":-3
 			}
 			]
 		}

@@ -23,7 +23,7 @@
 "collisionGroups":
 	[
 	{
-	"collisionTypes":["block","entity"],
+	"collisionTypes":["block"],
 	"collisions":
 		[
 		{

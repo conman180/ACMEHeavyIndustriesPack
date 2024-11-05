@@ -28,6 +28,7 @@
 	"blastDamageRadiusMax":10,
 	"proximityFuze":4,
 	"burnTime":325,
+	"guidanceDelay":45,
 	"accelerationTime":90,
 	"accelerationDelay":15,
 	"gravitationalVelocity":0.01,

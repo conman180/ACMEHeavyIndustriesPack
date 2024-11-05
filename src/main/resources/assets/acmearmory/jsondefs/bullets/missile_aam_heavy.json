@@ -24,11 +24,12 @@
 	"caseLength":4000,
 	"blastStrength":1,
 	"burnTime":170,
+	"guidanceDelay":60,
 	"accelerationTime":100,
 	"accelerationDelay":20,
 	"maxVelocity":300,
 	"gravitationalVelocity":0.03,
-	"turnRate":0.375,
+	"turnRate":0.5,
 	"damage":500,
 	"isHeat":true
 	},

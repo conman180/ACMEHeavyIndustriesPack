@@ -27,6 +27,7 @@
 	"blastStrength":0.5,
 	"armorPenetration":20,
 	"burnTime":50,
+	"guidanceDelay":10,
 	"accelerationTime":46,
 	"accelerationDelay":6,
 	"maxVelocity":280,

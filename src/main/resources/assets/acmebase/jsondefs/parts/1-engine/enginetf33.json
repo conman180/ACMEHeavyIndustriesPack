@@ -1,7 +1,7 @@
 {
 "general":
 	{
-	"name":"ACME H.I. TF33 Turbojet",
+	"name":"ACME H.I. TF33 Turbofan",
 	"description":"Used on the PJ-50",
 	"type":"engine_jet",
 	"customType":"tf33",

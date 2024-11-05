@@ -26,6 +26,7 @@
 	"armorPenetration":20,
 	"burnTime":150,
 	"accelerationTime":70,
+	"guidanceDelay":50,
 	"accelerationDelay":10,
 	"gravitationalVelocity":0.02,
 	"maxVelocity":250,

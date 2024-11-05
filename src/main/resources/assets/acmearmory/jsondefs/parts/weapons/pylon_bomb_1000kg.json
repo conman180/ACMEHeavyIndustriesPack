@@ -16,7 +16,7 @@
 	"capacity":1,
 	"reloadTime":5,
 	"isSemiAuto":true,
-	"fireSolo":false,
+	"fireSolo":true,
 	"muzzleVelocity":0,
 	"fireDelay":15.0,
 	"diameter":500.0,

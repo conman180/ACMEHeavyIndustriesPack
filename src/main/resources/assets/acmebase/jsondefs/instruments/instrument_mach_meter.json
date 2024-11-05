@@ -1,0 +1,46 @@
+{
+	"general":
+		{
+		"name":"Mach Meter",
+		"description":"Indicates Mach Number(scaled)",
+		"materials":
+			[
+			"minecraft:glass_pane:1",
+			"minecraft:redstone:2",
+			"minecraft:feather:1",
+			"oredict:ingotIron:2"
+			]
+		},
+	"textureName":"instrumentpage1.png",
+	"components":
+		[
+		{
+		"scale":1,
+		"textureXCenter":64,
+		"textureYCenter":64,
+		"textureWidth":128,
+		"textureHeight":128,
+		"lightUpTexture":true
+		},
+		{
+		"scale":1,
+		"yCenter":-25,
+		"textureXCenter":265,
+		"textureYCenter":91,
+		"textureWidth":6,
+		"textureHeight":56,
+		"lightUpTexture":true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"rotation",
+			"variable":"speed_scaled",
+			"centerPoint":[0,25,0],
+			"axis":[0,0,0.641],
+			"clampMax":300
+			}
+			]
+		}
+		]
+}

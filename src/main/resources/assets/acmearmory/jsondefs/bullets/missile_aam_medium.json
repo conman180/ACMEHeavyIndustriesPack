@@ -26,6 +26,7 @@
 	"burnTime":170,
 	"accelerationTime":85,
 	"accelerationDelay":15,
+	"guidanceDelay":45,
 	"gravitationalVelocity":0.03,
 	"maxVelocity":300,
 	"turnRate":0.5,

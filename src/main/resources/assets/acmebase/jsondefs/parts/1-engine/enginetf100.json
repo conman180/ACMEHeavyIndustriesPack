@@ -1,7 +1,7 @@
 {
 "general":
 	{
-	"name":"ACME H.I. TF100 Turbojet",
+	"name":"ACME H.I. TF100 Turbofan",
 	"description":"Used on the FJ-51C.",
 	"type":"engine_jet",
 	"customType":"tf100",

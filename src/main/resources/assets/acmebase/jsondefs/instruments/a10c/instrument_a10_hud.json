@@ -13,192 +13,378 @@
 	"textureName":"a10hud.png",
 	"components":
 		[
-		//Base
+		//attitude+
 		{
-		"scale":1.0,
-		"textureXCenter":128,
-		"textureYCenter":128,
-		"textureWidth":256,
-		"textureHeight":256,
-		"lightUpTexture":true
-		},
-		//Attitude
-		{
-		"scale":1.0,
-		"textureXCenter":896,
-		"textureYCenter":512,
-		"textureWidth":256,
-		"textureHeight":190,
+		"scale":0.75,
+		"textureXCenter":975,
+		"textureYCenter":964,
+		"textureWidth":98,
+		"textureHeight":120,
 		"lightUpTexture":true,
+		"overlayTexture": true,
 		"animations":
 			[
 			{
 			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0,60,0]
+			},
+			{
+			"animationType":"translation",
 			"variable":"pitch",
-			"axis": [0.0,2.845,0.0],
-			"clampMin":-256.0,
-			"clampMax":256.0
+			"axis": [0,10,0],
+			"clampMin":-904,
+			"clampMax":61
 			},
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
 			}
 			]
 		},
-		//Airspeed
+		//attitude-
 		{
-		"scale": 1.0,
+		"scale":0.75,
+		"textureXCenter":859,
+		"textureYCenter":60,
+		"textureWidth":98,
+		"textureHeight":120,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0,-60,0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"pitch",
+			"axis": [0,10,0],
+			"clampMin":-61,
+			"clampMax":904
+			},
+			{
+			"animationType":"rotation",
+			"variable":"roll",
+			"centerPoint":[0,0,0],
+			"axis":[0,0,-1]
+			}
+			]
+		},
+		//headingArrow
+		{
+		"yCenter":70,
+		"textureXCenter":270,
+		"textureYCenter":34,
+		"textureWidth":12,
+		"textureHeight":6,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0.5,0,0]
+			}
+			]
+		},
+		//headingTape
+		{
+		"scale":0.65,
+		"yCenter":64,
+		"textureXCenter":761,
+		"textureYCenter":512,
+		"textureWidth":14,
+		"textureHeight":100,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"animations":
+			[
+			{
+			"animationType":"rotation",
+			"variable":"!x",
+			"centerPoint":[0,0,0],
+			"axis": [0,0,-90]
+			},
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0,0.5,0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"heading",
+			"axis": [0,2.844,0]
+			}
+			]
+		},
+		//tvv
+		{
+		"scale":0.6,
+		"textureXCenter":271,
+		"textureYCenter":20,
+		"textureWidth":16,
+		"textureHeight":10,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0.3,1.2,0]
+			},
+			{
+			"animationType":"inhibitor",
+			"variable":"speed_scaled",
+			"clampMax":40
+			},
+			{
+			"animationType":"translation",
+			"variable":"slip_degrees",
+			"axis": [4.93,0,0],
+			"clampMin":-90,
+			"clampMax":90
+			},
+			{
+			"animationType":"translation",
+			"variable":"lift_reserve",
+			"axis": [0,4.93,0],
+			"clampMin":-90,
+			"clampMax":90
+			}
+			]
+		},
+		//airspeed
+		{
 		"textObject":
 			{
-			"pos":[-105.0,4.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[-50,-32,0],
+			"rot":[0,0,0],
+			"scale":0.8,
 			"variableName":"speed_scaled",
 			"variableFactor":1.944,
-			"variableFormat":"%03.0f",
+			"variableFormat":"%01.0f",
 			"defaultText":"",
 			"color":"4CFF00",
 			"lightsUp":true,
 			"renderPosition":2
 			},
 		"textFactor":1.0,
-		"lightUpTexture":true
+		"lightUpTexture":true,
+		"overlayTexture":true
 		},
-		//Throttle
+		//altitude
 		{
-		"scale": 1.0,
 		"textObject":
 			{
-			"pos":[-89.0,-110.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
-			"variableName":"throttle",
-			"variableFactor":100.0,
-			"variableFormat":"%03.0f",
-			"defaultText":"",
-			"color":"4CFF00",
-			"lightsUp":true,
-			"renderPosition":2
-			},
-		"textFactor":1.0,
-		"lightUpTexture":true
-		},
-		//Alt
-		{
-		"scale": 1.0,
-		"textObject":
-			{
-			"pos":[105.0,4.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
+			"pos":[50,-32,0],
+			"rot":[0,0,0],
+			"scale":0.8,
 			"variableName":"altitude",
-			"variableFactor":1.0,
-			"variableFormat":"%03.0f",
+			"variableFactor":1,
+			"variableFormat":"%01.0f",
 			"defaultText":"",
 			"color":"4CFF00",
 			"lightsUp":true,
 			"renderPosition":1
 			},
 		"textFactor":1.0,
-		"lightUpTexture":true
+		"lightUpTexture":true,
+		"overlayTexture":true
 		},
-		//Heading
+		//pitchAngle
 		{
-		"scale": 1.0,
 		"textObject":
 			{
-			"pos":[0.0,122.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
-			"variableName":"heading",
-			"variableFactor":1.0,
-			"variableFormat":"%03.0f",
+			"pos":[50,-40,0],
+			"rot":[0,0,0],
+			"scale":0.8,
+			"variableName":"pitch",
+			"variableFactor":-1,
+			"variableFormat":"%01.0f",
 			"defaultText":"",
 			"color":"4CFF00",
 			"lightsUp":true,
-			"renderPosition":0
+			"renderPosition":1
 			},
 		"textFactor":1.0,
-		"lightUpTexture":true
+		"lightUpTexture":true,
+		"overlayTexture":true
 		},
-		//DMG
-		{
-		"scale": 1.0,
-		"textObject":
-			{
-			"pos":[-91.0,-119.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
-			"variableName":"damage_percent",
-			"variableFactor":100.0,
-			"variableFormat":"%02.0f",
-			"defaultText":"",
-			"color":"4CFF00",
-			"lightsUp":true,
-			"renderPosition":2
-			},
-		"textFactor":1.0,
-		"lightUpTexture":true
-		},
-		//Fuel
-		{
-		"scale": 1.0,
-		"textObject":
-			{
-			"pos":[117.0,-119.0,0.0],
-			"rot":[0.0,0.0,0.0],
-			"scale":1.0,
-			"variableName":"fuel",
-			"variableFactor":100.0,
-			"variableFormat":"%02.0f",
-			"defaultText":"",
-			"color":"4CFF00",
-			"lightsUp":true,
-			"renderPosition":2
-			},
-		"textFactor":1.0,
-		"lightUpTexture":true
-		},
-		//GunsightStuff
+		//landingVSI
 		{
 		"scale":0.4,
-		"xCenter":0,
-		"yCenter":18,
-		"textureXCenter":19,
-		"textureYCenter":287,
-		"textureWidth":37,
-		"textureHeight":37,
-		"moveComponent":true,
+		"xCenter":40,
+		"yCenter":60,
+		"textureXCenter":345,
+		"textureYCenter":245,
+		"textureWidth":10,
+		"textureHeight":202,
 		"lightUpTexture":true,
+		"overlayTexture": true,
 		"animations":
 			[
 			{
 			"animationType":"visibility",
-			"variable":"!gun_active_2"
+			"variable":"gun_active_1"
 			},
+			{
+			"animationType":"visibility",
+			"variable":"gear_setpoint"
+			}
+			]
+		},
+		{
+		"scale":0.4,
+		"xCenter":44,
+		"yCenter":60,
+		"textureXCenter":355,
+		"textureYCenter":245,
+		"textureWidth":10,
+		"textureHeight":10,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"visibility",
+			"variable":"gun_active_1"
+			},
+			{
+			"animationType":"visibility",
+			"variable":"gear_setpoint"
+			},
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0,-0.2,0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"vertical_speed",
+			"axis": [0,2,0],
+			"clampMin":-100,
+			"clampMax":100
+			}
+			]
+		},
+		//beaconDist
+		
+		//ADF
+		{
+		"yCenter":80,
+		"textureXCenter":312,
+		"textureYCenter":38,
+		"textureWidth":14,
+		"textureHeight":14,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0.5,0,0]
+			},
+			{
+			"animationType":"translation",
+			"variable":"beacon_direction",
+			"axis": [0.5,0,0],
+			"clampMin":-30,
+			"clampMax":30
+			}
+			]
+		},
+		//gunCross
+		{
+		"scale":0.5,
+		"textureXCenter":292,
+		"textureYCenter":38,
+		"textureWidth":12,
+		"textureHeight":12,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"moveComponent":true,
+		"animations":
+			[
+			{
+			"animationType":"translation",
+			"variable":"!x",
+			"axis": [0.25,6.5,0]
+			}
+			]
+		},
+		//gunCCIP
+		{
+		"scale":0.6,
+		"yCenter":-3,
+		"textureXCenter":293,
+		"textureYCenter":64,
+		"textureWidth":38,
+		"textureHeight":38,
+		"lightUpTexture":true,
+		"overlayTexture": true,
+		"moveComponent":true,
+		"animations":
+			[
 			{
 			"animationType":"rotation",
 			"variable":"roll",
-			"centerPoint":[0.0,0.0,0.0],
-			"axis":[0.0,0.0,-1.0]
+			"centerPoint": [0,-0.65,0],
+			"axis": [0,0,-1]
 			},
 			{
 			"animationType":"translation",
-			"variable":"gun_ccip_angle_2",
-			"axis":[0.0,6.3,0.0],
-			"clampMin":-96.0,
-			"clampMax":96.0
+			"variable":"!x",
+			"axis": [0.3,0.65,0]
 			},
 			{
 			"animationType":"translation",
-			"variable":"gun_ccip_direction_2",
-			"axis":[6.3,0.0,0.0],
-			"clampMin":-96.0,
-			"clampMax":96.0
+			"variable":"gun_ccip_direction_1",
+			"axis": [4.93,0,0],
+			"clampMin":-100,
+			"clampMax":100
+			},
+			{
+			"animationType":"translation",
+			"variable":"gun_ccip_angle_1",
+			"axis": [0,-4.93,0],
+			"clampMin":-100,
+			"clampMax":100
+			},
+			{
+			"animationType":"visibility",
+			"variable":"!gun_active_1"
 			}
 			]
 		}
+		//sidewinderSearch
+		
+		//sideWinderLock
+		
+		//AGMsearch
+		
+		//AGMLock
+		
+		//lightRKTCCIP
+		
+		//medRKTCCIP
+		
+		//mk82CCIP
+		
+		//mk84CCIP
+		
+		
+		
+		
 		]
 }
