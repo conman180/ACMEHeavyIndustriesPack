@@ -11,7 +11,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="acmearmory"
-version="3.0.0b"
+version="3.1.0b"
 displayName="ACME Armories"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 logoFile="logo.png"
@@ -22,7 +22,7 @@ Focuses mainly on military aviation
 
 [[mods]]
 modId="acmebase"
-version="3.0.0b"
+version="3.1.0b"
 displayName="ACME Heavy Industries"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
@@ -34,24 +34,12 @@ Contains required base parts for the other modules
 
 [[mods]]
 modId="acmecivil"
-version="3.0.0b"
+version="3.1.0b"
 displayName="ACME H.I. Civilian Sector"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 logoFile="logo.png"
 description='''
 Civilian Sector of ACME Heavy Industries
-'''
-
-[[mods]]
-modId="acmetesting"
-version="3.0.0b"
-displayName="ACME H.I. Experimental Division"
-displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
-logoFile="logo.png"
-description='''
-Unfinished, or experimental features. Liable to change
-Also used as an update buffer for major changes to existing vehicles
-This branch should only exist in beta versions
 '''
 
 [[dependencies.acmebase]]

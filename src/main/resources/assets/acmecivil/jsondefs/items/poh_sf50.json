@@ -1,0 +1,407 @@
+{
+"general":
+	{
+	"name":"ACME Executive PJ-50 POH",
+	"materials": []
+	},
+"item":{"type":"booklet"},
+"booklet":
+	{
+	"textureWidth":280,
+	"textureHeight":180,
+	"coverTexture":"acmecivil:textures/guis/sf50/poh_sf50cover.png",
+	"titleText":
+		[
+		{
+		"pos":[210,10,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"ACME",
+		"color":"292929"
+		},
+		{
+		"pos":[210,25,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"EXECUTIVE",
+		"color":"292929"
+		},
+		{
+		"pos":[210,40,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"PJ-50",
+		"color":"292929"
+		},
+		{
+		"pos":[210,55,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"P.O.H.",
+		"color":"292929"
+		}
+		],
+	"pages":
+		[
+		{
+		"pageTexture":"acmecivil:textures/guis/sf50/poh_sf50page.png",
+		"title":"Desc. & Perf.",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Description",
+			"color":"000000"
+			},
+			{
+			"pos":[10,25,0],
+			"scale":0.75,
+			"defaultText":"The PJ-50 is a very light jet intended for personal travel that would take too long by ground to be productive. While costlier than driving, it makes up for it in time saved.",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[70,100,0],
+			"scale":1,
+			"defaultText":"Specs",
+			"color":"000000"
+			},
+			{
+			"pos":[10,110,0],
+			"scale":0.75,
+			"defaultText":"Engine: TF-33 Turbofan",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,120,0],
+			"scale":0.75,
+			"defaultText":"Wheels: OCP Small Wheel",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,130,0],
+			"scale":0.75,
+			"defaultText":"Seats: Any OCP Seat",
+			"color":"000000",
+			"renderPosition":1
+			},
+			//RightSide
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Performance 0.35SF",
+			"color":"000000"
+			},
+			{
+			"pos":[150,25,0],
+			"scale":0.75,
+			"defaultText":"Vne: 288 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,35,0],
+			"scale":0.75,
+			"defaultText":"Vr: 90-95 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,45,0],
+			"scale":0.75,
+			"defaultText":"Approach Speed:110 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,55,0],
+			"scale":0.75,
+			"defaultText":"T/O Dist:210  BLK",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,65,0],
+			"scale":0.75,
+			"defaultText":"Landing Dist:150 BLK",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//lightPanel
+		{
+		"pageTexture":"acmecivil:textures/guis/sf50/poh_sf50lightpage.png",
+		"title":"Annunciator Panel",
+		"pageText":
+			[
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Light IDs",
+			"color":"000000"
+			},
+			{
+			"pos":[150,30,0],
+			"scale":1,
+			"defaultText":"1: Autopilot",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,40,0],
+			"scale":1,
+			"defaultText":"2: Parking Brake",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,50,0],
+			"scale":1,
+			"defaultText":"3: Major Damage",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,60,0],
+			"scale":1,
+			"defaultText":"4: Missile Warning",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,70,0],
+			"scale":1,
+			"defaultText":"5: Low Fuel Warning",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,80,0],
+			"scale":1,
+			"defaultText":"6: Engine Temp",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,90,0],
+			"scale":1,
+			"defaultText":"7: Engine Hours",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//switch
+		{
+		"pageTexture":"acmecivil:textures/guis/sf50/poh_sf50switchpage.png",
+		"title":"Cockpit Switches",
+		"pageText":
+			[
+			{
+			"pos":[150,25,0],
+			"scale":1,
+			"defaultText":"",
+			"color":"000000"
+			}
+			]
+		},
+		//startup
+		{
+		"pageTexture":"acmecivil:textures/guis/sf50/poh_sf50page.png",
+		"title":"Startup/Shutdown",
+		"pageText":
+			[
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Startup",
+			"color":"000000"
+			},
+			{
+			"pos":[10,30,0],
+			"scale":1,
+			"defaultText":"Batt: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,40,0],
+			"scale":1,
+			"defaultText":"Generator: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,50,0],
+			"scale":1,
+			"defaultText":"Starter: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,60,0],
+			"scale":0.75,
+			"defaultText":"(After Engine Start)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,70,0],
+			"scale":1,
+			"defaultText":"Starter: OFF",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,80,0],
+			"scale":0.75,
+			"defaultText":"Note: DO NOT turn BATT or GEN off while starter is on. Will result in starter being unable to turn off.",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Shutdown",
+			"color":"000000"
+			},
+			{
+			"pos":[150,30,0],
+			"scale":1,
+			"defaultText":"Throttle: Idle",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,40,0],
+			"scale":1,
+			"defaultText":"Generator: OFF",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,50,0],
+			"scale":1,
+			"defaultText":"Batt: OFF",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//Takeoff
+		{
+		"pageTexture":"acmecivil:textures/guis/sf50/poh_sf50page.png",
+		"title":"Takeoff/Landing",
+		"pageText":
+			[
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Takeoff",
+			"color":"000000"
+			},
+			{
+			"pos":[10,30,0],
+			"scale":1,
+			"defaultText":"(After Runway Lineup)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,40,0],
+			"scale":1,
+			"defaultText":"Parking Brake: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,50,0],
+			"scale":1,
+			"defaultText":"Throttle: Full Power",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,60,0],
+			"scale":0.75,
+			"defaultText":"(After 100% RPM)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,70,0],
+			"scale":1,
+			"defaultText":"Parking Brake: OFF",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,80,0],
+			"scale":1,
+			"defaultText":"Rotate at Vr",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,90,0],
+			"scale":1,
+			"defaultText":"Retract Gear and Flaps",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Landing",
+			"color":"000000"
+			},
+			{
+			"pos":[150,30,0],
+			"scale":1,
+			"defaultText":"Gear: Down and Locked",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[150,40,0],
+			"scale":1,
+			"defaultText":"Speed: 115-120 KIAS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,50,0],
+			"scale":1,
+			"defaultText":"Cross Threshold BTW 95-100 KIAS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		}
+		]
+	}
+}

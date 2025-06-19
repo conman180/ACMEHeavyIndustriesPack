@@ -1,8 +1,0 @@
-{
-"packID":"acmetesting",
-"packName":"ACME H.I. Experimental Division",
-"fileStructure":1,
-"dependents":["mtsofficialpack"],
-"externalSkinsInOwnTab":false,
-"packItem":""
-}
