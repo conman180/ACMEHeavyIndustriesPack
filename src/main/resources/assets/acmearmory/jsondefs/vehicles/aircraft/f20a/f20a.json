@@ -28,6 +28,9 @@
 	"aileronArea":7,
 	"elevatorArea":4,
 	"rudderArea":1.55,
+	"crashSpeedMin":30,
+	"crashSpeedMax":75,
+	"crashSpeedDestroyed":110,
 	"litVariable":"Batt",
 	"panel":"mts:default_plane",
 	"flapNotches":[0,8,16,20]
@@ -931,7 +934,6 @@
 		}
 		]
 	}
-
 	//radar
 	
 	],
@@ -1869,6 +1871,54 @@
 		}
 		]
 	},
+	//eject reset 1
+	{
+	"collisionTypes":["click"],
+	"collisions":
+		[
+		{
+		"variableName":"EJECT",
+		"variableType":"toggle",
+		"pos":[1.5,-0.3125,3.3125],
+		"width":0.25,
+		"height":0.25
+		}
+		],
+	"animations":
+		[
+		{
+		"animationType":"visibility",
+		"variable":"!EJECT"
+		}
+		]
+	},
+	//eject reset 2
+	{
+	"collisionTypes":["click"],
+	"collisions":
+		[
+		{
+		"pos":[-1.5,-0.3125,3.3125],
+		"width":0.25,
+		"height":0.25,
+		"action":
+			{
+			"action":"increment",
+			"variable":"ej1",
+			"value":-30
+			}
+		}
+		],
+	"animations":
+		[
+		{
+		"animationType":"visibility",
+		"variable":"ej1",
+		"clampMin":29,
+		"clampMax":30
+		}
+		]
+	},
 	//stilts
 	{
 	"collisionTypes":
@@ -2390,7 +2440,7 @@
 			"animationType":"rotation",
 			"variable":"canopy",
 			"centerPoint":[0,0.6875,3.375],
-			"axis":[-35,0,0],
+			"axis":[-45,0,0],
 			"duration":40
 			}
 			]

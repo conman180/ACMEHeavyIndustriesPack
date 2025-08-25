@@ -97,7 +97,7 @@
 			{
 			"animationType":"translation",
 			"variable":"beacon_bearing_delta",
-			"axis":[3.15,0,0],
+			"axis":[-3.15,0,0],
 			"clampMin":-30,
 			"clampMax":30
 			}

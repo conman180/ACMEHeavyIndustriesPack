@@ -2,8 +2,8 @@
 "general":
 	{
 	"health":260,
-	"radarRange":1024,
-	"radarWidth":30,
+	"radarRange":0,
+	"radarWidth":0,
 	"materialLists":[
 		[
 		]
@@ -18,20 +18,23 @@
 	"hasStrobeLights":true,
 	"hasLandingLights":true,
 	"emptyMass":6800,
-	"fuelCapacity":40390,
+	"fuelCapacity":40400,
 	"gearSequenceDuration":110,
 	"brakingFactor":4.0,
 	"flapSpeed":0.6,
-	"dragCoefficient":0.021,
+	"dragCoefficient":0.02,
 	"tailDistance":3.85,
-	"wingSpan":7.5,
-	"wingArea":23,
-	"aileronArea":5,
+	"wingSpan":12,
+	"wingArea":24,
+	"aileronArea":7,
 	"elevatorArea":3,
 	"rudderArea":1.5,
-	"gravityFactor":1,
+	"crashSpeedMin":30,
+	"crashSpeedMax":75,
+	"crashSpeedDestroyed":110,
+	"gravityFactor":1.6,
 	"litVariable":"Batt",
-	"panel":"mts:default_plane",
+	"panel":"acmebase:panel_mig21",
 	"flapNotches":[0,25,45]
 	},
 "parts":
@@ -40,8 +43,8 @@
 	{
 	"pos":[0,-1.5625,5.9375],
 	"turnsWithSteer":true,
-	"minValue":0.65,
-	"maxValue":0.95,
+	"minValue":0.75,
+	"maxValue":0.8,
 	"types":["ground_wheel","ground_wheel_aircraft"],
 	"interactableVariables":[
 		["!gear_setpoint"]
@@ -50,8 +53,8 @@
 	},
 	{
 	"pos":[1.46875,-1.4375,-0.25],
-	"minValue":0.95,
-	"maxValue":1.1,
+	"minValue":0.9375,
+	"maxValue":1.0,
 	"types":["ground_wheel","ground_wheel_aircraft"],
 	"interactableVariables":[
 		["!gear_setpoint"]
@@ -60,8 +63,8 @@
 	},
 	{
 	"pos":[-1.46875,-1.4375,-0.25],
-	"minValue":0.95,
-	"maxValue":1.1,
+	"minValue":0.9375,
+	"maxValue":1.0,
 	"types":["ground_wheel","ground_wheel_aircraft"],
 	"interactableVariables":[
 		["!gear_setpoint"]
@@ -81,8 +84,19 @@
 	{
 	"pos":[0,0.25,5.0625],
 	"isController":true,
+	"canDisableGun":true,
 	"types":["seat_ejection"],
-	"transferVariable":"EJECT"
+	"transferVariable":"ej2",
+	"animations":
+		[
+		{
+		"animationType":"translation",
+		"variable":"EJECT",
+		"axis":[0,8,0],
+		"duration":6,
+		"forwardsDelay":20
+		}
+		]
 	},
 	//weapons
 	{
@@ -308,7 +322,7 @@
 		{
 		"animationType":"inhibitor",
 		"variable":"speed_scaled",
-		"clampMax":128
+		"clampMax":231
 		},
 		{
 		"animationType":"translation",
@@ -351,6 +365,24 @@
 	},
 	{
 	"variable":"gravityFactor",
+	"minValue":0.55,
+	"maxValue":1.6,
+	"animations":
+		[
+		{
+		"animationType":"inhibitor",
+		"variable":"!damage_totaled"
+		},
+		{
+		"animationType":"translation",
+		"variable":"speed_scaled",
+		"axis":[0,-0.02,0],
+		"offset":1.12
+		}
+		]
+	},
+	{
+	"variable":"gravityFactor",
 	"animations":
 		[
 		{
@@ -360,7 +392,7 @@
 		{
 		"animationType":"translation",
 		"variable":"!x",
-		"axis":[0,0,1.6]
+		"axis":[0,0,2]
 		}
 		]
 	},
@@ -374,7 +406,7 @@
 		{
 		"animationType":"visibility",
 		"variable":"speed_scaled",
-		"clampMin":150,
+		"clampMin":180,
 		"clampMax":260
 		}
 		]
@@ -508,20 +540,46 @@
 		}
 		]
 	},
-	//gravity
+	//ejectSequence
 	{
-	"variable":"gravityFactor",
+	"variable":"ej1",
+	"maxValue":30,
 	"animations":
 		[
 		{
 		"animationType":"inhibitor",
-		"variable":"flaps_actual",
-		"clampMax":40
+		"variable":"ej2",
+		"clampMin":1,
+		"clampMax":1
+		},
+		{
+		"animationType":"visibility",
+		"variable":"!EJECT"
+		},
+		{
+		"animationType":"translation",
+		"variable":"EJECT",
+		"axis":[0,1,0]
+		}
+		]
+	},
+	{
+	"variable":"ej2",
+	"animations":
+		[
+		{
+		"animationType":"inhibitor",
+		"variable":"part_present_5"
+		},
+		{
+		"animationType":"inhibitor",
+		"variable":"ej1",
+		"clampMax":29
 		},
 		{
 		"animationType":"translation",
 		"variable":"!x",
-		"axis":[0,0,1.55]
+		"axis":[0,0,1]
 		}
 		]
 	}
@@ -531,6 +589,7 @@
 	//leftCol
 	{
 	"pos":[0.359375,0.75,5.79686],
+	"defaultInstrument":"acmebase:instrument_airspeed_scaled",
 	"scale":0.019,
 	"hudX":30,
 	"hudY":30,
@@ -538,6 +597,7 @@
 	},
 	{
 	"pos":[0.359375,0.578125,5.79686],
+	"defaultInstrument":"acmebase:instrument_drum_altimeter",
 	"scale":0.019,
 	"hudX":30,
 	"hudY":75,
@@ -545,6 +605,7 @@
 	},
 	{
 	"pos":[0.359375,0.40625,5.79686],
+	"defaultInstrument":"acmebase:instrument_radar_altimeter",
 	"scale":0.019,
 	"hudX":30,
 	"hudY":120,
@@ -553,6 +614,7 @@
 	//left2
 	{
 	"pos":[0.171875,0.71875,5.79686],
+	"defaultInstrument":"acmebase:instrument_attitude_western",
 	"scale":0.0225,
 	"hudX":80,
 	"hudY":45,
@@ -560,6 +622,7 @@
 	},
 	{
 	"pos":[0.171875,0.46875,5.79686],
+	"defaultInstrument":"acmebase:instrument_horizontal_situation_indicator",
 	"scale":0.0225,
 	"hudX":80,
 	"hudY":100,
@@ -567,21 +630,24 @@
 	},
 	//MidCol
 	{
-	"pos":[0,0.75,5.79686],
+	"pos":[-0.015625,0.75,5.79686],
+	"defaultInstrument":"acmebase:instrument_rwr",
 	"scale":0.019,
 	"hudX":130,
 	"hudY":30,
 	"hudScale":0.325
 	},
 	{
-	"pos":[0,0.578125,5.79686],
+	"pos":[-0.015625,0.578125,5.79686],
+	"defaultInstrument":"acmebase:instrument_vsi",
 	"scale":0.019,
 	"hudX":130,
 	"hudY":75,
 	"hudScale":0.325
 	},
 	{
-	"pos":[0,0.40625,5.79686],
+	"pos":[-0.015625,0.40625,5.79686],
+	"defaultInstrument":"acmebase:instrument_mach_meter",
 	"scale":0.019,
 	"hudX":130,
 	"hudY":120,
@@ -590,6 +656,8 @@
 	//Right3
 	{
 	"pos":[-0.21875,0.484375,5.79686],
+	"defaultInstrument":"acmebase:instrument_rpm_percent",
+	"optionalPartNumber":1,
 	"scale":0.019,
 	"hudX":175,
 	"hudY":75,
@@ -597,6 +665,7 @@
 	},
 	{
 	"pos":[-0.40625,0.578125,5.79686],
+	"defaultInstrument":"acmebase:instrument_high_fuel_flow",
 	"scale":0.019,
 	"hudX":185,
 	"hudY":30,
@@ -604,13 +673,14 @@
 	},
 	{
 	"pos":[-0.40625,0.40625,5.79686],
+	"defaultInstrument":"mtsofficialpack:instrument_aircraft_fuelqty",
 	"scale":0.019,
 	"hudX":185,
 	"hudY":120,
 	"hudScale":0.325
 	}
 	//Radar
-	],		
+	],
 "collisionGroups":
 	[
 	//canopy
@@ -1729,7 +1799,14 @@
 		"variableType":"toggle",
 		"pos":[0.53125,0.359375,5.71875],
 		"width":0.0625,
-		"height":0.0625
+		"height":0.09375
+		},
+		{
+		"variableName":"gear_setpoint",
+		"variableType":"toggle",
+		"pos":[0.46875,0.359375,5.765625],
+		"width":0.0625,
+		"height":0.125
 		},
 		{
 		"variableName":"RADAR",
@@ -1761,17 +1838,17 @@
 		}
 		]
 	},
-	//EjectReset
+	//eject reset 1
 	{
-	"isInterior":true,
+	"collisionTypes":["click"],
 	"collisions":
 		[
 		{
 		"variableName":"EJECT",
 		"variableType":"toggle",
-		"pos":[0,0.3,5],
-		"width":0.5,
-		"height":0.5
+		"pos":[0.875,0.0625,4.125],
+		"width":0.25,
+		"height":0.25
 		}
 		],
 	"animations":
@@ -1779,6 +1856,33 @@
 		{
 		"animationType":"visibility",
 		"variable":"!EJECT"
+		}
+		]
+	},
+	//eject reset 2
+	{
+	"collisionTypes":["click"],
+	"collisions":
+		[
+		{
+		"pos":[-0.875,0.0625,4.125],
+		"width":0.25,
+		"height":0.25,
+		"action":
+			{
+			"action":"increment",
+			"variable":"ej1",
+			"value":-30
+			}
+		}
+		],
+	"animations":
+		[
+		{
+		"animationType":"visibility",
+		"variable":"ej1",
+		"clampMin":29,
+		"clampMax":30
 		}
 		]
 	}

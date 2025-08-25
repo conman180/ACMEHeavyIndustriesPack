@@ -1,0 +1,406 @@
+{
+"general":
+	{
+	"name":"ACME H.I. FJ-12B POH",
+	"materials": []
+	},
+"item":{"type":"booklet"},
+"booklet":
+	{
+	"textureWidth":280,
+	"textureHeight":180,
+	"coverTexture":"acmearmory:textures/guis/mig21/poh_mig21cover.png",
+	"titleText":
+		[
+		{
+		"pos":[210,10,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"ACME H.I.",
+		"color":"292929"
+		},
+		{
+		"pos":[210,25,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"ARMORIES",
+		"color":"292929"
+		},
+		{
+		"pos":[210,40,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"FJ-12B",
+		"color":"292929"
+		},
+		{
+		"pos":[210,55,0],
+		"rot":[0,0,0],
+		"scale":1.5,
+		"defaultText":"P.O.H.",
+		"color":"292929"
+		}
+		],
+	"pages":
+		[
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21page.png",
+		"title":"Desc. & Perf.",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Description",
+			"color":"000000"
+			},
+			{
+			"pos":[10,25,0],
+			"scale":0.75,
+			"defaultText":"The FJ-12 Lancer is a high speed fighter focused on an interceptor role. While it cant turn well, it is fast. Be careful with the afterburner. It's a gas guzzler.",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[70,100,0],
+			"scale":1,
+			"defaultText":"Specs",
+			"color":"000000"
+			},
+			{
+			"pos":[10,110,0],
+			"scale":0.75,
+			"defaultText":"Engine:TJ-25 Turbojet",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,120,0],
+			"scale":0.75,
+			"defaultText":"Wheels:2xOCP Large, 1xOCP Med.",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,130,0],
+			"scale":0.75,
+			"defaultText":"Seat:ACME Ejection Seat",
+			"color":"000000",
+			"renderPosition":1
+			},
+			//RightSide
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Performance 0.35SF",
+			"color":"000000"
+			},
+			{
+			"pos":[150,25,0],
+			"scale":0.75,
+			"defaultText":"Max Speed SL: 605 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,35,0],
+			"scale":0.75,
+			"defaultText":"Vr: 175-180 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,45,0],
+			"scale":0.75,
+			"defaultText":"Approach Speed:200 KTS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,55,0],
+			"scale":0.75,
+			"defaultText":"T/O Dist:300 BLK",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,65,0],
+			"scale":0.75,
+			"defaultText":"Landing Dist:250 BLK",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//leftpanel
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21leftpanel.png",
+		"title":"Left Panel",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"",
+			"color":"000000"
+			}
+			]
+		},
+		//gearpanel
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21gearpanel.png",
+		"title":"Gear Panel",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"",
+			"color":"000000"
+			}
+			]
+		},
+		//rightpanel
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21rightpanel.png",
+		"title":"Right Panel",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"",
+			"color":"000000"
+			}
+			]
+		},
+		//warnings
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21warning.png",
+		"title":"Warning Lights",
+		"pageText":
+			[
+			//LeftSide
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"",
+			"color":"000000"
+			}
+			]
+		},
+		//startup
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21page.png",
+		"title":"Startup/Shutdown",
+		"pageText":
+			[
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Startup",
+			"color":"000000"
+			},
+			{
+			"pos":[10,30,0],
+			"scale":1,
+			"defaultText":"Batt: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,40,0],
+			"scale":1,
+			"defaultText":"Generator: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,50,0],
+			"scale":1,
+			"defaultText":"Starter: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,60,0],
+			"scale":0.75,
+			"defaultText":"(After Engine Start)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,70,0],
+			"scale":1,
+			"defaultText":"Starter: OFF",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,80,0],
+			"scale":0.75,
+			"defaultText":"Note: DO NOT turn BATT or GEN off while starter is on. Will result in starter being unable to turn off.",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Shutdown",
+			"color":"000000"
+			},
+			{
+			"pos":[150,30,0],
+			"scale":1,
+			"defaultText":"Throttle: Idle",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,40,0],
+			"scale":1,
+			"defaultText":"Generator: OFF",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,50,0],
+			"scale":1,
+			"defaultText":"Batt: OFF",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//Takeoff
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21page.png",
+		"title":"Takeoff/Landing",
+		"pageText":
+			[
+			{
+			"pos":[70,13,0],
+			"scale":1,
+			"defaultText":"Takeoff",
+			"color":"000000"
+			},
+			{
+			"pos":[10,30,0],
+			"scale":1,
+			"defaultText":"(After Runway Lineup)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,40,0],
+			"scale":1,
+			"defaultText":"Parking Brake: ON",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,50,0],
+			"scale":1,
+			"defaultText":"Throttle: Full Power",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,60,0],
+			"scale":0.75,
+			"defaultText":"(After 100% RPM)",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,70,0],
+			"scale":1,
+			"defaultText":"Parking Brake: OFF",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,80,0],
+			"scale":1,
+			"defaultText":"Rotate at Vr",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[10,90,0],
+			"scale":1,
+			"defaultText":"Retract Gear and Flaps",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Landing",
+			"color":"000000"
+			},
+			{
+			"pos":[150,30,0],
+			"scale":1,
+			"defaultText":"Gear: Down and Locked",
+			"color":"000000",
+			"renderPosition":1
+			},
+			{
+			"pos":[150,40,0],
+			"scale":1,
+			"defaultText":"Speed: 200-210 KIAS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			},
+			{
+			"pos":[150,50,0],
+			"scale":1,
+			"defaultText":"Cross Threshold 185 KIAS",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		},
+		//eject
+		{
+		"pageTexture":"acmearmory:textures/guis/mig21/poh_mig21eject.png",
+		"title":"Eject Reset",
+		"pageText":
+			[
+			//RightSide
+			{
+			"pos":[205,13,0],
+			"scale":1,
+			"defaultText":"Ejection Reset",
+			"color":"000000"
+			},
+			{
+			"pos":[150,25,0],
+			"scale":0.75,
+			"defaultText":"This aircraft comes equipped with an ejection seat. In most cases this will be a one time deal. However, if the aircraft survives the crash, it is possible to salvage and repair it. In order to have the aircraft be flyable again, the ejection system must be reset to allow another seat to be placed. Right click the numbers in numerical order to reset.",
+			"color":"000000",
+			"wrapWidth":110,
+			"renderPosition":1
+			}
+			]
+		}
+		]
+	}
+}

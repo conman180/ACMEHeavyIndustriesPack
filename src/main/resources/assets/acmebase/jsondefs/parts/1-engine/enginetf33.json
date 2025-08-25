@@ -46,7 +46,7 @@
 "definitions":[
 	{
 	"subName":"",
-	"name":"ACME H.I. TF33 Turbojet",
+	"name":"ACME H.I. TF33 Turbofan",
 	"modelName":"engineturbojet",
 	"textureName":"engineturbojet",
 	"extraMaterials":[]

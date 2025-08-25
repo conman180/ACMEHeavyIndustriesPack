@@ -27,8 +27,9 @@
 	"elevatorArea":4,
 	"rudderArea":1.55,
 	"gravityFactor":1.6,
-	"crashSpeedMin":5,
-	"crashSpeedMax":15,
+	"crashSpeedMin":15,
+	"crashSpeedMax":55,
+	"crashSpeedDestroyed":80,
 	"litVariable":"Batt",
 	"panel":"acmebase:panel_sf50",
 	"flapNotches":[0,15,30]
@@ -186,6 +187,7 @@
 		}
 		]
 	},
+	//gravity
 	{
 	"variable":"gravityFactor",
 	"minValue":0.9,
@@ -197,6 +199,21 @@
 		"variable":"speed_scaled",
 		"axis":[0,-0.02,0],
 		"offset":0.56
+		}
+		]
+	},
+	{
+	"variable":"gravityFactor",
+	"animations":
+		[
+		{
+		"animationType":"visibility",
+		"variable":"!damage_totaled"
+		},
+		{
+		"animationType":"translation",
+		"variable":"!x",
+		"axis":[0,0,2]
 		}
 		]
 	}

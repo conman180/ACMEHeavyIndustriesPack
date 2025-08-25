@@ -67,6 +67,7 @@
 		"width":20,
 		"height":20,
 		"textureStart":[280,216,0],
+		"statusVariable":"Batt",
 		"text":"BATT",
 		"clickAction":
 			{

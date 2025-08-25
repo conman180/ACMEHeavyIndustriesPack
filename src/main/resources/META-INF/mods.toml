@@ -11,7 +11,7 @@ license="All rights reserved"
 
 [[mods]]
 modId="acmearmory"
-version="3.2.0b"
+version="3.3.0b"
 displayName="ACME Armories"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 logoFile="logo.png"
@@ -22,7 +22,7 @@ Focuses mainly on military aviation
 
 [[mods]]
 modId="acmebase"
-version="3.2.0b"
+version="3.3.0b"
 displayName="ACME Heavy Industries"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 # Pack logo.
@@ -34,7 +34,7 @@ Contains required base parts for the other modules
 
 [[mods]]
 modId="acmecivil"
-version="3.2.0b"
+version="3.3.0b"
 displayName="ACME H.I. Civilian Sector"
 displayURL="https://www.curseforge.com/minecraft/mc-mods/acme-heavy-industries-pack"
 logoFile="logo.png"
@@ -45,6 +45,6 @@ Civilian Sector of ACME Heavy Industries
 [[dependencies.acmebase]]
     modId="mts"
     mandatory=true
-    versionRange="[22.16.0,)"
+    versionRange="[22.18.0,)"
     ordering="NONE"
     side="BOTH"
